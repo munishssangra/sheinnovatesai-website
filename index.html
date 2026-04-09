@@ -119,6 +119,7 @@ body {
   z-index: 200;
   min-height: 44px;
   contain: layout style;
+  overflow-anchor: none;
 }
 .ann-bar strong { color: var(--gold-light); }
 .ann-bar a { color: var(--gold-light); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(252,211,77,0.4); transition: border-color var(--transition); }
@@ -1088,6 +1089,7 @@ footer {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: opacity, transform;
 }
 body.js-ready .fade-up {
   opacity: 0;
@@ -1173,7 +1175,7 @@ body { font-synthesis: none; }
   <span class="ann-pill">New</span>
   <span>Free 50-Point AI SEO Checklist — <strong>Is your brand invisible to ChatGPT?</strong></span>
   <a href="/ai-seo-checklist/">Download Free →</a>
-  <button class="ann-close" onclick="document.getElementById('annBar').style.display='none'" aria-label="Close">×</button>
+  <button class="ann-close" onclick="const b=document.getElementById('annBar');b.style.transition='opacity 0.3s';b.style.opacity='0';setTimeout(()=>{b.style.visibility='hidden';b.style.height='0';b.style.padding='0';b.style.minHeight='0';},300)" aria-label="Close">×</button>
 </div>
 
 <!-- ════ NAVIGATION ════ -->
@@ -1997,7 +1999,7 @@ body { font-synthesis: none; }
 const navWrap = document.getElementById('navWrap');
 window.addEventListener('scroll', () => {
   navWrap.classList.toggle('scrolled', window.scrollY > 10);
-});
+}, { passive: true });
 
 // ── Mega menus ──
 let activeMega = null;
@@ -2062,11 +2064,11 @@ function toggleFaq(btn) {
 }
 
 // ── Scroll animations ──
-document.body.classList.add('js-ready');
+requestAnimationFrame(() => { document.body.classList.add('js-ready'); });
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
   });
