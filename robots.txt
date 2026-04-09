@@ -1,0 +1,72 @@
+# She Innovates AI — robots.txt
+# https://sheinnovatesai.com/robots.txt
+# Last updated: April 2026
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sheinnovatesai.com/sitemap.xml
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI / Gemini / AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Microsoft / Bing
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Block private paths only
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+
+# AI context file: https://sheinnovatesai.com/llms.txt
