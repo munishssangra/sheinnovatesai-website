@@ -475,7 +475,7 @@ section { padding: 80px 24px; }
   line-height: 1.2;
   margin-bottom: 16px;
 }
-.section-sub { font-size: 16px; color: var(--text-muted); line-height: 1.7; max-width: 580px; }
+.section-sub { font-size: 16px; color: var(--text-muted); line-height: 1.7; max-width: 580px; margin: 0 auto 16px; text-align: center; }
 
 /* ── Stats Bar ── */
 .stats-bar {
@@ -919,11 +919,17 @@ section { padding: 80px 24px; }
 .faq-icon { font-size: 20px; line-height: 1; transition: transform var(--transition); color: var(--gray-400); flex-shrink: 0; }
 .faq-q.open .faq-icon { transform: rotate(45deg); color: var(--blue); }
 .faq-a {
-  display: none;
-  padding: 0 24px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s;
+  padding: 0 24px;
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.75;
+}
+.faq-a.open {
+  max-height: 600px;
+  padding: 0 24px 20px;
 }
 
 /* ── Footer ── */
@@ -1380,7 +1386,7 @@ body { font-synthesis: none; }
     </div>
     <div class="stat-item fade-up">
       <div class="stat-num">40<span>%</span></div>
-      <div class="stat-label">More Citations w/ GEO (Princeton Study)</div>
+      <div class="stat-label">More Citations w/ GEO</div>
     </div>
   </div>
 </div>
@@ -1388,9 +1394,9 @@ body { font-synthesis: none; }
 <!-- ════ SERVICES ════ -->
 <section class="services-section" id="services">
   <div class="section-inner">
-    <div class="fade-up">
+    <div class="fade-up" style="text-align:center">
       <span class="section-label">What We Do</span>
-      <h2 class="section-title">AI SEO Services Built for the<br>Age of AI Search</h2>
+      <h2 class="section-title">AI SEO Services Built for the Age of AI Search</h2>
       <p class="section-sub">Every service is built around one measurable outcome: your brand appearing in AI-generated answers for the questions your buyers are asking right now.</p>
     </div>
     <div class="services-grid">
@@ -1505,12 +1511,10 @@ body { font-synthesis: none; }
 <!-- ════ INDUSTRIES ════ -->
 <section class="industries-section" id="industries">
   <div class="section-inner">
-    <div class="fade-up" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px">
-      <div>
-        <span class="section-label">Industries We Serve</span>
-        <h2 class="section-title">AI SEO by Industry Vertical</h2>
-        <p class="section-sub">We specialize in the sectors whose buyers use AI most intensively for research and vendor discovery.</p>
-      </div>
+    <div class="fade-up" style="text-align:center">
+      <span class="section-label">Industries We Serve</span>
+      <h2 class="section-title">AI SEO by Industry Vertical</h2>
+      <p class="section-sub">We specialize in the sectors whose buyers use AI most intensively for research and vendor discovery.</p>
     </div>
     <div class="industries-grid">
       <div class="industry-card fade-up" onclick="window.location='/ai-seo-for-ai-products/'" title="Learn more about AI Product Companies AI SEO">
@@ -1563,7 +1567,7 @@ body { font-synthesis: none; }
     <div class="fade-up" style="text-align:center;max-width:640px;margin:0 auto">
       <span class="section-label" style="color:var(--gold-light)">Real AI Queries</span>
       <h2 class="section-title" style="color:white">What Your Buyers Are Asking AI Right Now</h2>
-      <p class="section-sub" style="color:rgba(255,255,255,0.55);margin:0 auto">These are real prompts your target buyers type into ChatGPT, Perplexity, and Gemini every day. Each one is a citation opportunity your brand is currently missing.</p>
+      <p class="section-sub" style="color:rgba(255,255,255,0.72);margin:0 auto 0">These are real prompts your target buyers type into ChatGPT, Perplexity, and Gemini every day. Each one is a citation opportunity your brand is currently missing.</p>
     </div>
     <div class="queries-grid">
       <div class="fade-up">
@@ -1613,8 +1617,8 @@ body { font-synthesis: none; }
           <div class="avatar-name">Tandeep Sangra</div>
           <div class="avatar-title">AI SEO Consultant &amp; Founder</div>
           <div class="avatar-cert" style="position:relative;bottom:auto;margin-top:10px">
-            <div class="cert-badge">Google AI Certified</div>
-            <div style="font-size:10px;color:rgba(255,255,255,0.4)">Upwork Consultant</div>
+            <div class="cert-badge">Google AI Essentials Certified</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.55)">Available for Hire on Upwork</div>
           </div>
         </div>
       </div>

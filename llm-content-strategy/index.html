@@ -96,7 +96,7 @@ a.kw:hover{color:var(--navy);border-bottom-color:var(--blue)}
 .faq-icon{font-size:20px;font-weight:300;color:var(--blue);flex-shrink:0;transition:transform var(--transition)}
 .faq-q.open .faq-icon{transform:rotate(45deg)}
 .faq-a{font-size:14px;color:var(--text-muted);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s}
-.faq-q.open+.faq-a{max-height:800px;padding-bottom:16px}
+.faq-q.open+.faq-q.open+.faq-q.open+.faq-a{max-height:800px;padding-bottom:16px}
 .faq-q .faq-icon{font-size:18px;font-weight:300;color:var(--blue);flex-shrink:0}
 .faq-q.open .faq-icon{color:var(--navy)}
 .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:20px}
@@ -176,7 +176,7 @@ body.js-ready .fade-up.visible{opacity:1;transform:none}
 .faq-q.open{color:#1A56A0}
 .faq-icon{font-size:20px;line-height:1;color:#94a3b8;flex-shrink:0}
 .faq-q.open .faq-icon{color:#1A56A0}
-.faq-a{display:none;padding:0 22px 18px;font-size:14px;color:#475569;line-height:1.78}
+.faq-a.open{max-height:600px;padding:0 22px 18px}
 /* Related */
 .rel-sec{background:#0F2A5C;padding:56px 24px}
 .rel-w{max-width:1200px;margin:0 auto}
@@ -244,6 +244,8 @@ footer{background:var(--footer-bg)}
 .blog-hero a:not([class*="btn"]):hover {
   color: #FCD34D;
 }
+  .sec-lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);margin-bottom:10px;text-align:center}
+  .sec-title{font-family:'DM Serif Display',serif;font-size:32px;font-weight:700;color:#0F2A5C;margin:0 0 32px;text-align:center;line-height:1.25}
 </style>
 </head>
 <body>
@@ -440,9 +442,9 @@ footer{background:var(--footer-bg)}
   </aside>
 </div>
 
-<section class="faq-sec"><div class="faq-w"><div class="sec-lbl fu">FAQ</div><div class="sec-title fu">Frequently Asked Questions</div><div class="faq-item fu"><button class="faq-q" onclick="toggleFaq(this)">Does LLM Content Strategy require new content?<span class="faq-icon">+</span></button><div class="faq-a">Not necessarily. The highest-impact starting point is usually restructuring your existing top pages to include direct answers, statistics, and FAQ sections — not creating new content from scratch.</div></div>
-<div class="faq-item fu"><button class="faq-q" onclick="toggleFaq(this)">Can you write the content for me?<span class="faq-icon">+</span></button><div class="faq-a">Yes. We offer content writing as an add-on service — pages and blog posts written specifically for LLM citation, following the exact content architecture proven to increase AI inclusion rates.</div></div>
-<div class="faq-item fu"><button class="faq-q" onclick="toggleFaq(this)">How does content strategy relate to schema markup?<span class="faq-icon">+</span></button><div class="faq-a"><a href="/schema-markup-services/" class="kw">Schema markup</a> and content strategy work together. Schema tells AI what your content is about. LLM-optimized content gives AI something worth citing. Both are required for maximum AI citation rates.</div></div></div></section>
+<section class="faq-sec"><div class="faq-w"><div class="sec-lbl fade-up">FAQ</div><h2 class="sec-title fade-up">Frequently Asked Questions</h2><div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">Does LLM Content Strategy require new content?<span class="faq-icon">+</span></button><div class="faq-a">Not necessarily. The highest-impact starting point is usually restructuring your existing top pages to include direct answers, statistics, and FAQ sections — not creating new content from scratch.</div></div>
+<div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">Can you write the content for me?<span class="faq-icon">+</span></button><div class="faq-a">Yes. We offer content writing as an add-on service — pages and blog posts written specifically for LLM citation, following the exact content architecture proven to increase AI inclusion rates.</div></div>
+<div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">How does content strategy relate to schema markup?<span class="faq-icon">+</span></button><div class="faq-a"><a href="/schema-markup-services/" class="kw">Schema markup</a> and content strategy work together. Schema tells AI what your content is about. LLM-optimized content gives AI something worth citing. Both are required for maximum AI citation rates.</div></div></div></section>
 
 <footer>
   <div class="footer-top">

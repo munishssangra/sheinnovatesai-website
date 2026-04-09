@@ -897,12 +897,15 @@ section { padding: 80px 24px; }
 .faq-icon { font-size: 20px; line-height: 1; transition: transform var(--transition); color: var(--gray-400); flex-shrink: 0; }
 .faq-q.open .faq-icon { transform: rotate(45deg); color: var(--blue); }
 .faq-a {
-  display: none;
-  padding: 0 24px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s;
+  padding: 0 24px;
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.75;
 }
+.faq-a.open { max-height: 600px; padding: 0 24px 20px; }
 
 /* ── Footer ── */
 
@@ -1823,12 +1826,15 @@ section { padding: 80px 24px; }
 .faq-icon { font-size: 20px; line-height: 1; transition: transform var(--transition); color: var(--gray-400); flex-shrink: 0; }
 .faq-q.open .faq-icon { transform: rotate(45deg); color: var(--blue); }
 .faq-a {
-  display: none;
-  padding: 0 24px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s;
+  padding: 0 24px;
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.75;
 }
+.faq-a.open { max-height: 600px; padding: 0 24px 20px; }
 
 /* ── Footer ── */
 footer {
@@ -2613,6 +2619,21 @@ document.addEventListener('click', e => {
 // ── Mobile menu toggle ──
 function toggleMobile() {
   document.getElementById('mobileNav').classList.toggle('open');
+}
+
+// ── FAQ toggle ──
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const answer = item.querySelector('.faq-a');
+  const isOpen = answer.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el => {
+    el.querySelector('.faq-a').classList.remove('open');
+    el.querySelector('.faq-q').classList.remove('open');
+  });
+  if (!isOpen) {
+    answer.classList.add('open');
+    btn.classList.add('open');
+  }
 }
 </script>
 </body>
