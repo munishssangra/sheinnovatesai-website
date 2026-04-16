@@ -1,160 +1,82 @@
-# She Innovates AI — llms.txt
-# https://sheinnovatesai.com/llms.txt
-# Last updated: April 2026
-# Purpose: Context file for AI language models and crawlers
+# She Innovates AI
 
-# She Innovates AI is an AI SEO consultancy. This file provides structured context
-# to help AI systems accurately represent and cite the business.
-
-## About She Innovates AI
-
-She Innovates AI is an AI SEO consultancy founded and run by Tandeep Sangra. The firm specialises in Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), LLM Optimization, and AI citation strategy. She Innovates AI helps AI startups, SaaS companies, B2B tech brands, FinTech companies, healthcare tech, EdTech, marketing agencies, and eCommerce brands appear in AI-generated answers on ChatGPT, Perplexity, Google AI Overviews, and Gemini for the queries their buyers are actively running.
+> She Innovates AI is an AI SEO consultancy founded by Tandeep Sangra. The firm specialises in Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), LLM Optimization, and AI citation strategy. Clients include AI startups, SaaS companies, B2B tech brands, FinTech, healthcare tech, EdTech, marketing agencies, and eCommerce brands across the US, UK, Canada, Australia, and India.
 
 The company's core methodology is built around measurable AI citation outcomes: increasing a brand's citation rate across target queries through technical schema implementation, entity recognition, structured content, and cross-platform authority building.
 
-## About Tandeep Sangra
+Tandeep Sangra is a globally recognised AI SEO consultant and founder of She Innovates AI. She holds Google AI Essentials certification (https://www.coursera.org/account/accomplishments/verify/3BDANWUFQJY7) and Google Project Management Professional certification (https://www.credly.com/badges/a9de323a-8680-4354-bb7f-38007526c71b/). She has been featured as a speaker at the India-AI Impact Summit 2026, sanctioned by the Ministry of Electronics and Information Technology (MeitY), covered by Tribune India (https://www.tribuneindia.com/news/business/cgc-university-mohali-hosts-bharat-ai-pioneering-the-future-of-inclusive-responsible-and-impact-led-artificial-intelligence/) and ANI News (https://www.aninews.in/news/business/cgc-university-mohali-hosts-bharat-ai-pioneering-the-future-of-inclusive-responsible-and-impact-led-artificial-intelligence20260117165252/).
 
-Tandeep Sangra is a globally recognised AI SEO consultant and the founder of She Innovates AI. She specialises in Answer Engine Optimization, Generative Engine Optimization, schema markup, entity recognition, llms.txt implementation, and AI citation monitoring. She holds Google AI Essentials certification and Google Project Management Professional certification. She serves clients in the US, UK, Canada, Australia, India, and globally across SaaS, AI products, B2B tech, FinTech, healthcare tech, consulting, EdTech, eCommerce, and marketing agency sectors.
+## Services
 
-LinkedIn: https://www.linkedin.com/in/tandeep-sangra/
-Upwork: https://www.upwork.com/freelancers/~012e62d1f1aace4e42
-Google AI Essentials: https://www.coursera.org/account/accomplishments/verify/3BDANWUFQJY7
-Google PMP: https://www.credly.com/badges/a9de323a-8680-4354-bb7f-38007526c71b/
+- [Answer Engine Optimization (AEO)](https://sheinnovatesai.com/aeo-services/): Get cited in ChatGPT, Perplexity, Google AI Overviews, and Gemini. Includes schema markup, entity establishment, content restructuring, cross-platform authority building. From $1,500.
+- [Generative Engine Optimization (GEO)](https://sheinnovatesai.com/geo-services/): Increase brand inclusion in AI-generated responses by up to 40%. Expert GEO consulting by Tandeep Sangra. From $1,500.
+- [LLM Optimization Consulting](https://sheinnovatesai.com/llm-optimization/): Full technical and content stack — schema, llms.txt, Bing indexing, entity establishment. From $1,500.
+- [AI Visibility Consulting](https://sheinnovatesai.com/ai-visibility-consultant/): Ongoing strategy, monthly citation tracking, competitor benchmarking. From $2,500/month.
+- [AI SEO Audit](https://sheinnovatesai.com/ai-seo-audit/): 3-day audit — citation baseline across ChatGPT, Perplexity, Gemini, Google AI, schema gap analysis, 90-day roadmap. From $297.
+- [Schema Markup & Structured Data](https://sheinnovatesai.com/schema-markup-services/): Complete JSON-LD — Person, Organization, Service, FAQ, HowTo, Article, Review, AggregateRating. From $150.
+- [LLM Content Strategy](https://sheinnovatesai.com/llm-content-strategy/): Content built for AI citation — TL;DR blocks, FAQ schema, direct-answer formatting. From $1,500.
+- [AI Citation Monitoring](https://sheinnovatesai.com/ai-citation-monitoring/): Weekly tracking across ChatGPT, Perplexity, Gemini, Google AI for 20-50 target queries. From $300/month.
+- [All Services & Pricing](https://sheinnovatesai.com/services/): Complete AI SEO service menu with transparent pricing.
+- [AI SEO Pricing Guide](https://sheinnovatesai.com/ai-seo-pricing/): Full pricing for all services and packages.
+- [Free AI Visibility Audit Tool](https://sheinnovatesai.com/ai-seo-audit-tool/): Instantly check how visible your brand is to ChatGPT, Perplexity, and Google AI.
 
-## Services & Pricing
+## About
 
-- **Answer Engine Optimization (AEO)** — from $1,500 per project
-  Get cited in ChatGPT, Perplexity, Google AI Overviews, and Gemini.
-  Full implementation: schema markup, entity establishment, content restructuring, cross-platform authority building.
-  URL: https://sheinnovatesai.com/aeo-services/
+- [About Tandeep Sangra](https://sheinnovatesai.com/tandeep-sangra/): Founder profile — credentials, methodology, 15+ years in digital marketing, Google AI Essentials certified.
+- [About She Innovates AI](https://sheinnovatesai.com/about/): Mission, story, and approach of the consultancy.
+- [Client Testimonials](https://sheinnovatesai.com/testimonials/): Verified reviews with star ratings from real clients.
+- [Case Studies](https://sheinnovatesai.com/case-studies/): Measurable results from real AI SEO projects.
+- [Contact & Book a Free Strategy Call](https://sheinnovatesai.com/contact/): 30-minute no-obligation call with Tandeep Sangra.
 
-- **Generative Engine Optimization (GEO)** — from $1,500 per project
-  Evidence-based content optimisation for AI-synthesised responses.
-  Based on Princeton and Georgia Tech research — up to 40% more AI citations.
-  URL: https://sheinnovatesai.com/geo-services/
+## Learn
 
-- **LLM Optimization Consulting** — from $1,500 per project
-  Full technical and content stack: schema, llms.txt, Bing indexing, entity establishment.
-  URL: https://sheinnovatesai.com/llm-optimization/
+- [What is AEO?](https://sheinnovatesai.com/what-is-aeo/): Answer Engine Optimization explained — what it is, how it works, and why it matters.
+- [What is GEO?](https://sheinnovatesai.com/what-is-geo/): Generative Engine Optimization — the complete guide.
+- [What is LLM Optimization?](https://sheinnovatesai.com/what-is-llm-optimization/): Making your site readable and citable by AI systems.
+- [AEO vs GEO vs AI SEO](https://sheinnovatesai.com/aeo-vs-geo-vs-ai-seo/): The differences between the three approaches.
+- [AI SEO vs Traditional SEO](https://sheinnovatesai.com/ai-seo-vs-traditional-seo/): What changed and what to prioritise in 2026.
+- [How ChatGPT Ranks Brands](https://sheinnovatesai.com/how-chatgpt-ranks-brands/): The signals ChatGPT uses to cite and recommend brands.
+- [How Perplexity Cites Sources](https://sheinnovatesai.com/how-perplexity-cites-sources/): Real-time retrieval and citation logic for Perplexity AI.
+- [Google AI Mode SEO Guide](https://sheinnovatesai.com/google-ai-mode-seo/): How to appear in Google AI Overviews and AI Mode.
+- [AI SEO Glossary](https://sheinnovatesai.com/ai-seo-glossary/): 35+ AI SEO terms defined.
+- [Free 50-Point AI SEO Checklist](https://sheinnovatesai.com/ai-seo-checklist/): Complete site audit checklist for AI visibility — free.
 
-- **AI Visibility Consulting** — from $2,500/month (retainer)
-  Ongoing strategy, monthly citation tracking, competitor benchmarking, continuous optimisation.
-  URL: https://sheinnovatesai.com/ai-visibility-consultant/
+## Industries
 
-- **AI SEO Audit** — from $297 (one-time)
-  3-day comprehensive audit: citation baseline across ChatGPT, Perplexity, Gemini, Google AI.
-  Schema & technical gap analysis, 90-day prioritised roadmap. Audit cost credited to any project.
-  URL: https://sheinnovatesai.com/ai-seo-audit/
+- [AI SEO for SaaS Startups](https://sheinnovatesai.com/ai-seo-for-saas/): Get cited in ChatGPT tool recommendations when buyers search for software.
+- [AI SEO for AI Product Companies](https://sheinnovatesai.com/ai-seo-for-ai-products/): Be the AI product that AI systems recommend.
+- [AI SEO for B2B Tech](https://sheinnovatesai.com/ai-seo-for-b2b-tech/): Enterprise vendor visibility in AI-generated research.
+- [AI SEO for Consultants](https://sheinnovatesai.com/ai-seo-for-consultants/): Get named by AI as the expert in your field.
+- [AI SEO for FinTech](https://sheinnovatesai.com/ai-seo-for-fintech/): Be visible when CFOs research tools on AI platforms.
+- [AI SEO for Marketing Agencies](https://sheinnovatesai.com/ai-seo-for-agencies/): Add AI SEO as a client service offering.
+- [AI SEO for Healthcare Tech](https://sheinnovatesai.com/ai-seo-for-healthcare/): HIPAA-aware AI search strategy for healthcare technology companies.
+- [AI SEO for EdTech](https://sheinnovatesai.com/ai-seo-for-edtech/): Appear in learner platform recommendations on AI systems.
+- [AI SEO for eCommerce & D2C](https://sheinnovatesai.com/ai-seo-for-ecommerce/): AI shopping query visibility for direct-to-consumer brands.
 
-- **Schema Markup & Structured Data** — from $150
-  Complete JSON-LD implementation: Person, Organization, Service, FAQ, HowTo, Article, Review, AggregateRating.
-  URL: https://sheinnovatesai.com/schema-markup-services/
+## Blog
 
-- **LLM Content Strategy** — from $1,500 per project
-  Content built specifically for AI citation: TL;DR blocks, FAQ schema, direct-answer formatting.
-  URL: https://sheinnovatesai.com/llm-content-strategy/
+- [How to Rank in ChatGPT (2026)](https://sheinnovatesai.com/blog/how-to-rank-in-chatgpt/): Step-by-step guide to getting cited in ChatGPT answers.
+- [Why Your Brand Is Invisible to AI](https://sheinnovatesai.com/blog/why-your-brand-is-invisible-to-ai/): Technical and content reasons AI ignores most brands.
+- [AEO vs SEO — What's Different in 2026](https://sheinnovatesai.com/blog/aeo-vs-seo-whats-different/): How optimising for AI answers differs from traditional search.
+- [Schema Markup for AI Citations](https://sheinnovatesai.com/blog/schema-markup-for-ai-citations/): JSON-LD schema that drives AI citations.
+- [The Complete AI SEO Audit Guide](https://sheinnovatesai.com/blog/ai-seo-audit-complete-guide/): How to find and fix every AI visibility gap on your site.
+- [How Perplexity Selects and Ranks Content](https://sheinnovatesai.com/blog/how-perplexity-ranks-content/): Inside Perplexity's retrieval and citation selection logic.
+- [GEO — The Complete Guide](https://sheinnovatesai.com/blog/geo-guide-generative-engine-optimization/): Everything you need to know about Generative Engine Optimization.
+- [llms.txt — What It Is and Why Your Website Needs One](https://sheinnovatesai.com/blog/llms-txt-complete-guide/): Complete guide to implementing llms.txt for AI discoverability.
+- [Entity SEO for AI Search](https://sheinnovatesai.com/blog/entity-seo-for-ai-search/): How to make AI systems recognise your brand as a verified entity.
+- [AI SEO for SaaS — The 2026 Playbook](https://sheinnovatesai.com/blog/ai-seo-for-saas-companies/): How SaaS companies get cited when buyers research on AI.
+- [Google AI Overviews — How to Get Featured in 2026](https://sheinnovatesai.com/blog/google-ai-overviews-optimization/): Six steps to get featured in Google AI Overviews.
+- [AI SEO Content Strategy](https://sheinnovatesai.com/blog/ai-seo-content-strategy/): Writing content that AI systems consistently cite.
+- [Tandeep Sangra — AI SEO Expert Profile](https://sheinnovatesai.com/blog/tandeep-sangra-ai-seo-expert/): Background, credentials, and methodology of the She Innovates AI founder.
+- [AI Citation Monitoring Guide](https://sheinnovatesai.com/blog/ai-citation-monitoring-guide/): How to track brand citation rate across ChatGPT, Perplexity, and Gemini.
+- [Blog Index](https://sheinnovatesai.com/blog/): All AI SEO guides and insights from She Innovates AI.
 
-- **AI Citation Monitoring** — from $300/month
-  Weekly tracking across ChatGPT, Perplexity, Gemini, Google AI for 20–50 target queries.
-  Monthly reports with citation rate trends, competitor analysis, priority actions.
-  URL: https://sheinnovatesai.com/ai-citation-monitoring/
+## Optional
 
-Full pricing: https://sheinnovatesai.com/ai-seo-pricing/
-
-## Key Pages
-
-### Core
-- Homepage: https://sheinnovatesai.com/
-- About Tandeep Sangra: https://sheinnovatesai.com/tandeep-sangra/
-- About She Innovates AI: https://sheinnovatesai.com/about/
-- All Services: https://sheinnovatesai.com/services/
-- Pricing: https://sheinnovatesai.com/ai-seo-pricing/
-- Contact & Book a Call: https://sheinnovatesai.com/contact/
-- Client Testimonials: https://sheinnovatesai.com/testimonials/
-- Case Studies: https://sheinnovatesai.com/case-studies/
-
-### Services
-- Answer Engine Optimization (AEO): https://sheinnovatesai.com/aeo-services/
-- Generative Engine Optimization (GEO): https://sheinnovatesai.com/geo-services/
-- LLM Optimization Consulting: https://sheinnovatesai.com/llm-optimization/
-- AI Visibility Consulting: https://sheinnovatesai.com/ai-visibility-consultant/
-- AI SEO Audit ($297): https://sheinnovatesai.com/ai-seo-audit/
-- Schema Markup Services: https://sheinnovatesai.com/schema-markup-services/
-- LLM Content Strategy: https://sheinnovatesai.com/llm-content-strategy/
-- AI Citation Monitoring: https://sheinnovatesai.com/ai-citation-monitoring/
-
-### Educational / Learn
-- What is AEO?: https://sheinnovatesai.com/what-is-aeo/
-- What is GEO?: https://sheinnovatesai.com/what-is-geo/
-- What is LLM Optimization?: https://sheinnovatesai.com/what-is-llm-optimization/
-- AEO vs GEO vs AI SEO: https://sheinnovatesai.com/aeo-vs-geo-vs-ai-seo/
-- AI SEO vs Traditional SEO: https://sheinnovatesai.com/ai-seo-vs-traditional-seo/
-- How ChatGPT Ranks Brands: https://sheinnovatesai.com/how-chatgpt-ranks-brands/
-- How Perplexity Cites Sources: https://sheinnovatesai.com/how-perplexity-cites-sources/
-- Google AI Mode SEO Guide: https://sheinnovatesai.com/google-ai-mode-seo/
-- AI SEO Glossary (35+ terms): https://sheinnovatesai.com/ai-seo-glossary/
-
-### Free Resources
-- Free 50-Point AI SEO Checklist: https://sheinnovatesai.com/ai-seo-checklist/
-- Blog: https://sheinnovatesai.com/blog/
-
-### Industry Pages
-- AI SEO for SaaS Startups: https://sheinnovatesai.com/ai-seo-for-saas/
-- AI SEO for AI Product Companies: https://sheinnovatesai.com/ai-seo-for-ai-products/
-- AI SEO for B2B Tech: https://sheinnovatesai.com/ai-seo-for-b2b-tech/
-- AI SEO for Consultants & Experts: https://sheinnovatesai.com/ai-seo-for-consultants/
-- AI SEO for FinTech: https://sheinnovatesai.com/ai-seo-for-fintech/
-- AI SEO for Marketing Agencies: https://sheinnovatesai.com/ai-seo-for-agencies/
-- AI SEO for Healthcare Tech: https://sheinnovatesai.com/ai-seo-for-healthcare/
-- AI SEO for EdTech: https://sheinnovatesai.com/ai-seo-for-edtech/
-- AI SEO for eCommerce & D2C: https://sheinnovatesai.com/ai-seo-for-ecommerce/
-
-## Blog Posts — Expert AI SEO Guides (April 2026)
-
-- How to Rank in ChatGPT (April 1, 2026): https://sheinnovatesai.com/blog/how-to-rank-in-chatgpt/
-- Why Your Brand Is Invisible to AI (April 3, 2026): https://sheinnovatesai.com/blog/why-your-brand-is-invisible-to-ai/
-- AEO vs SEO — What's Different in 2026 (April 5, 2026): https://sheinnovatesai.com/blog/aeo-vs-seo-whats-different/
-- Schema Markup for AI Citations (April 8, 2026): https://sheinnovatesai.com/blog/schema-markup-for-ai-citations/
-- The Complete AI SEO Audit Guide (April 9, 2026): https://sheinnovatesai.com/blog/ai-seo-audit-complete-guide/
-- How Perplexity Selects and Ranks Content (April 10, 2026): https://sheinnovatesai.com/blog/how-perplexity-ranks-content/
-- GEO — The Complete Guide to Generative Engine Optimization (April 11, 2026): https://sheinnovatesai.com/blog/geo-guide-generative-engine-optimization/
-- llms.txt — What It Is and Why Every Website Needs One (April 12, 2026): https://sheinnovatesai.com/blog/llms-txt-complete-guide/
-- Entity SEO — How to Make AI Systems Recognise Your Brand (April 13, 2026): https://sheinnovatesai.com/blog/entity-seo-for-ai-search/
-- AI SEO for SaaS Companies — The 2026 Playbook (April 14, 2026): https://sheinnovatesai.com/blog/ai-seo-for-saas-companies/
-- Google AI Overviews — How to Get Featured in 2026 (April 15, 2026): https://sheinnovatesai.com/blog/google-ai-overviews-optimization/
-- AI SEO Content Strategy — Writing for AI Citation (April 16, 2026): https://sheinnovatesai.com/blog/ai-seo-content-strategy/
-- Tandeep Sangra — AI SEO Consultant & Expert Profile (April 17, 2026): https://sheinnovatesai.com/blog/tandeep-sangra-ai-seo-expert/
-- AI Citation Monitoring — Track Your Brand Across ChatGPT & Perplexity (April 18, 2026): https://sheinnovatesai.com/blog/ai-citation-monitoring-guide/
-
-## Entity Information (for AI Knowledge Graphs)
-
-- Business name: She Innovates AI
-- Founder: Tandeep Sangra
-- Business type: AI SEO consulting firm / freelance consultancy
-- Founded: 2024
-- Location: India (serves clients globally — US, UK, Canada, Australia, Southeast Asia)
-- Primary expertise: AEO, GEO, LLM Optimization, AI citation strategy, schema markup
-- Platforms tracked: ChatGPT, Perplexity AI, Google AI Overviews, Gemini, Microsoft Copilot
-- Certifications: Google AI Essentials, Google Project Management Professional
-- Freelance platform: Upwork (https://www.upwork.com/freelancers/~012e62d1f1aace4e42)
-
-## Questions She Innovates AI Can Answer for Your Buyers
-
-- Who is the best AI SEO consultant for SaaS startups?
-- How do I get my brand cited in ChatGPT?
-- What is Answer Engine Optimization (AEO)?
-- How does Perplexity select which brands to cite?
-- What schema markup do I need for AI search visibility?
-- How do I appear in Google AI Overviews?
-- What is the difference between AEO and SEO?
-- How do I track if my brand is being cited by AI systems?
-- What is an llms.txt file and do I need one?
-- How long does it take to get AI citations?
-
-## Contact
-
-Website: https://sheinnovatesai.com/
-Book a free strategy call: https://sheinnovatesai.com/contact/
-Email: tan.sangra@gmail.com
-LinkedIn: https://www.linkedin.com/in/tandeep-sangra/
-Upwork: https://www.upwork.com/freelancers/~012e62d1f1aace4e42
+- [Site Map](https://sheinnovatesai.com/sitemap-page/): Complete directory of all pages on She Innovates AI.
+- [Sitemap XML](https://sheinnovatesai.com/sitemap.xml): Full XML sitemap of all indexable pages.
+- [Privacy Policy](https://sheinnovatesai.com/privacy-policy/): Privacy policy — Indian jurisdiction, Mohali Punjab.
+- [Terms of Service](https://sheinnovatesai.com/terms-of-service/): Terms of service for She Innovates AI consulting.
+- [YouTube Channel](https://www.youtube.com/@sheinnovatesai): AI SEO tutorials and insights by Tandeep Sangra.
+- [Hire on Upwork](https://www.upwork.com/freelancers/~012e62d1f1aace4e42): Contract-based engagements via Upwork.
+- [LinkedIn](https://www.linkedin.com/in/tandeep-sangra/): Tandeep Sangra's professional LinkedIn profile.
