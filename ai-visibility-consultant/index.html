@@ -274,30 +274,21 @@ footer{background:var(--footer-bg)}
 </head>
 <body>
 {% include nav.html %}
-</div>
 
-<div class="bc"><div class="bc-w"><a href="/">Home</a> <span>›</span> <a href="/services/">Services</a> <span>›</span> <span>AI Visibility Consulting</span></div></div>
-
-<header class="ph">
-  <div class="ph-grid"></div>
-  <div class="ph-glow"></div>
-  <div class="ph-w">
-    <div class="ph-eye">🎯 Ongoing Retainer</div>
-    <h1 class="ph-h1">AI Visibility Consulting — <em>Monthly Retainer</em></h1>
-    <p class="ph-lead">Ongoing strategy and monthly citation tracking to maintain and grow your AI search visibility across ChatGPT, Perplexity, Gemini and Google AI.</p>
-    <div class="ph-ctas">
-      <a class="btn-gold" href="/contact/">Book Free Strategy Call</a>
-      <a class="btn-outline" href="/ai-seo-audit/">Start with $247 Audit →</a>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-breadcrumb"><a href="/">Home</a> › <a href="/services/">Services</a> › <span>AI Visibility Consulting</span></div>
+    <span class="page-label">Ongoing Retainer</span>
+    <h1 class="page-h1">AI Visibility Consulting — <em>Monthly Retainer</em></h1>
+    <p class="page-sub">Ongoing strategy and monthly citation tracking to maintain and grow your AI search visibility across ChatGPT, Perplexity, Gemini and Google AI.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;align-items:center">
+      <a href="/contact/" style="display:inline-block;background:var(--gold);color:var(--navy);padding:12px 24px;border-radius:8px;font-weight:700;text-decoration:none;font-size:14px">Book Free Strategy Call</a>
+      <a href="/ai-seo-audit/" style="display:inline-block;background:rgba(255,255,255,0.1);color:white;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:14px;border:1px solid rgba(255,255,255,0.2)">Start with $247 Audit →</a>
     </div>
   </div>
-</header>
-
-<div class="tldr-wrap">
-  <div class="tldr">
-    <div class="tldr-lbl">TL;DR — Summary</div>
-    <div class="tldr-txt">AI visibility is not a one-time project — it compounds with consistent effort. The <a href="/ai-visibility-consultant/" class="kw">AI Visibility Consulting</a> monthly retainer gives you <a href="/tandeep-sangra/" class="kw">Tandeep Sangra</a> as your ongoing AI SEO consultant, handling everything from weekly citation monitoring to monthly content optimization and schema maintenance.</div>
-  </div>
 </div>
+
+<div class="tldr"><strong>TL;DR — Summary</strong>AI visibility is not a one-time project — it compounds with consistent effort. The <a href="/ai-visibility-consultant/" class="kw">AI Visibility Consulting</a> monthly retainer gives you <a href="/tandeep-sangra/" class="kw">Tandeep Sangra</a> as your ongoing AI SEO consultant, handling everything from weekly citation monitoring to monthly content optimization and schema maintenance.</div>
 
 <div class="pw">
   <div class="pb">
@@ -313,7 +304,9 @@ footer{background:var(--footer-bg)}
 </ul>
 <h2>Pricing</h2>
 <p>AI Visibility Consulting retainers start from <strong>$697/month</strong>. Minimum 3-month commitment. <a href="/ai-seo-pricing/" class="kw">View full pricing →</a></p>
-  </div>
+  <h2>Frequently Asked Questions</h2><div style="margin-top:8px"><div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">What is the minimum commitment?<span class="faq-icon">+</span></button><div class="faq-a">3 months minimum. AI citation authority compounds over time — the first month establishes the foundation, month 2 shows initial improvements, and by month 3 you typically see consistent citation presence in your target queries.</div></div>
+<div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">Can I cancel after 3 months?<span class="faq-icon">+</span></button><div class="faq-a">Yes. After the initial 3-month period, retainers continue monthly with 30-day notice to cancel.</div></div>
+<div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">Is this suitable for a startup?<span class="faq-icon">+</span></button><div class="faq-a">Yes. We work with pre-revenue startups through Series B companies. The retainer scope and content volume adjust to your stage. <a href="/contact/" class="kw">Book a call to discuss your specific situation →</a></div></div><div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">How is this different from a one-time AI Visibility Audit?<span class="faq-icon">+</span></button><div class="faq-a">The Audit (from $247) is a single diagnostic snapshot. AI Visibility Consulting is the ongoing relationship that acts on those findings continuously — weekly citation monitoring, monthly schema and content updates, and quarterly strategy adjustments as AI platforms change.</div></div><div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">What results should I expect in the first 3 months?<span class="faq-icon">+</span></button><div class="faq-a">Month 1 establishes your citation baseline and implements foundational schema and entity fixes. Month 2 typically shows initial citation improvements as AI systems re-crawl. By month 3, most clients see consistent citation presence for their priority target queries, though timelines vary by starting point and competitive landscape.</div></div></div></div>
   <aside class="sidebar">
 <div class="sb-card feat"><div class="sb-title">AI Visibility Audit</div><div class="sb-price"><sub style="font-family:'Sora',sans-serif;font-size:14px">from </sub>$247</div><div class="sb-per">3-day comprehensive audit</div><ul class="sb-feats"><li>ChatGPT, Perplexity &amp; Gemini scan</li><li>Schema audit + JSON-LD fixes</li><li>90-day prioritised roadmap</li><li>Strategy call with Tandeep</li></ul><a class="sb-btn gold" href="/ai-seo-audit/">Book AI Visibility Audit →</a></div>
 <div class="sb-card"><div class="sb-title" style="color:var(--navy)">Free Strategy Call</div><p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:16px">30 minutes, no pitch. Get 3 immediate actions to improve your AI visibility.</p><a class="sb-btn outline" href="/contact/">Book Free Call →</a></div>
@@ -321,9 +314,7 @@ footer{background:var(--footer-bg)}
   </aside>
 </div>
 
-<section class="faq-sec"><div class="faq-w"><div class="sec-lbl fade-up">FAQ</div><h2 class="sec-title fade-up">Frequently Asked Questions</h2><div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">What is the minimum commitment?<span class="faq-icon">+</span></button><div class="faq-a">3 months minimum. AI citation authority compounds over time — the first month establishes the foundation, month 2 shows initial improvements, and by month 3 you typically see consistent citation presence in your target queries.</div></div>
-<div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">Can I cancel after 3 months?<span class="faq-icon">+</span></button><div class="faq-a">Yes. After the initial 3-month period, retainers continue monthly with 30-day notice to cancel.</div></div>
-<div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">Is this suitable for a startup?<span class="faq-icon">+</span></button><div class="faq-a">Yes. We work with pre-revenue startups through Series B companies. The retainer scope and content volume adjust to your stage. <a href="/contact/" class="kw">Book a call to discuss your specific situation →</a></div></div><div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">How is this different from a one-time AI Visibility Audit?<span class="faq-icon">+</span></button><div class="faq-a">The Audit (from $247) is a single diagnostic snapshot. AI Visibility Consulting is the ongoing relationship that acts on those findings continuously — weekly citation monitoring, monthly schema and content updates, and quarterly strategy adjustments as AI platforms change.</div></div><div class="faq-item fade-up"><button class="faq-q" onclick="toggleFaq(this)">What results should I expect in the first 3 months?<span class="faq-icon">+</span></button><div class="faq-a">Month 1 establishes your citation baseline and implements foundational schema and entity fixes. Month 2 typically shows initial citation improvements as AI systems re-crawl. By month 3, most clients see consistent citation presence for their priority target queries, though timelines vary by starting point and competitive landscape.</div></div></div></section>
+
 
 {% include footer.html %}
 <script>
