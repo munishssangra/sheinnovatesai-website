@@ -1,0 +1,80 @@
+<script>
+const navWrap = document.getElementById('navWrap');
+window.addEventListener('scroll', () => {
+  navWrap.classList.toggle('scrolled', window.scrollY > 10);
+});
+let activeMega = null;
+function toggleMega(name) {
+  const panel = document.getElementById('mega-' + name);
+  const trigger = document.getElementById('nt-' + name);
+  if (activeMega === name) {
+    panel.classList.remove('open');
+    trigger.classList.remove('open');
+    activeMega = null;
+  } else {
+    closeAllMega();
+    panel.classList.add('open');
+    trigger.classList.add('open');
+    activeMega = name;
+  }
+}
+function closeAllMega() {
+  ['services','industries','learn','about'].forEach(n => {
+    const p = document.getElementById('mega-' + n);
+    const t = document.getElementById('nt-' + n);
+    if (p) p.classList.remove('open');
+    if (t) t.classList.remove('open');
+  });
+  activeMega = null;
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('.nav-item')) closeAllMega();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeAllMega();
+});
+let mobileOpen = false;
+function toggleMobile() {
+  mobileOpen = !mobileOpen;
+  document.getElementById('mobileNav').classList.toggle('open', mobileOpen);
+}
+document.querySelectorAll('.mobile-nav-link, .mobile-nav-cta').forEach(el => {
+  el.addEventListener('click', () => {
+    mobileOpen = false;
+    document.getElementById('mobileNav').classList.remove('open');
+  });
+});
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const answer = item.querySelector('.faq-a');
+  const isOpen = answer.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el => {
+    el.querySelector('.faq-a').classList.remove('open');
+    el.querySelector('.faq-q').classList.remove('open');
+  });
+  if (!isOpen) {
+    answer.classList.add('open');
+    btn.classList.add('open');
+  }
+}
+document.body.classList.add('js-ready');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      closeAllMega();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+</script>
