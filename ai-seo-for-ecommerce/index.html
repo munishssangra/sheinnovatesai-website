@@ -41,7 +41,8 @@
 html{scroll-behavior:smooth;font-size:16px}
 body{font-family:'Sora',sans-serif;color:var(--text);background:#fff;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a.kw{color:var(--blue);text-decoration:none;border-bottom:1px dotted rgba(26,86,160,0.4);transition:border-color .2s,color .2s}
-a.kw:hover{color:var(--navy);border-bottom-color:var(--blue)}
+a.kw:hover{color:#D97706;border-bottom-color:#D97706}
+.hero-sub a.kw:hover,.page-hero-inner a.kw:hover,.ph-w a.kw:hover,.blog-hero a.kw:hover,.page-hero a.kw:hover,.ph a.kw:hover,.hero a.kw:hover,.blog-listing-hero a.kw:hover,.cta-section a.kw:hover,.dark a.kw:hover,.featured a.kw:hover,.footer-top a.kw:hover,.how-visual a.kw:hover,.inline-cta a.kw:hover,.queries-section a.kw:hover,.rel-sec a.kw:hover,.stats-bar a.kw:hover,.takeaway a.kw:hover,.ann-bar a.kw:hover,.fe a.kw:hover,.citation-demo a.kw:hover,.citation-item a.kw:hover,.citation-text a.kw:hover,footer a.kw:hover,.footer-body a.kw:hover,.bs-card.dark a.kw:hover{color:#FCD34D !important;border-bottom-color:rgba(252,211,77,0.7) !important}
 .hero-sub a.kw:hover,.page-hero-inner a.kw:hover,.ph-w a.kw:hover,.blog-hero a.kw:hover,.page-hero a.kw:hover{color:#FCD34D !important;border-bottom-color:rgba(252,211,77,0.7) !important}
 .nav-wrap{position:sticky;top:0;z-index:150;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-100);transition:box-shadow var(--transition)}
 .nav-wrap.scrolled{box-shadow:var(--shadow)}
@@ -268,7 +269,7 @@ function toggleMega(name) {
   }
 }
 function closeAllMega() {
-  ['services','industries','learn','about'].forEach(n => {
+  ['services','industries','learn','newsroom','about'].forEach(n => {
     const p = document.getElementById('mega-' + n);
     const t = document.getElementById('nt-' + n);
     if (p) p.classList.remove('open');

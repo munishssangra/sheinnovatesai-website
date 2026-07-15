@@ -36,7 +36,8 @@
 html{scroll-behavior:smooth;font-size:16px}
 body{font-family:'Sora',sans-serif;color:var(--text);background:#fff;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a.kw{color:var(--blue);text-decoration:none;border-bottom:1px dotted rgba(26,86,160,0.4);transition:border-color .2s,color .2s}
-a.kw:hover{color:var(--navy);border-bottom-color:var(--blue)}
+a.kw:hover{color:#D97706;border-bottom-color:#D97706}
+.hero-sub a.kw:hover,.page-hero-inner a.kw:hover,.ph-w a.kw:hover,.blog-hero a.kw:hover,.page-hero a.kw:hover,.ph a.kw:hover,.hero a.kw:hover,.blog-listing-hero a.kw:hover,.cta-section a.kw:hover,.dark a.kw:hover,.featured a.kw:hover,.footer-top a.kw:hover,.how-visual a.kw:hover,.inline-cta a.kw:hover,.queries-section a.kw:hover,.rel-sec a.kw:hover,.stats-bar a.kw:hover,.takeaway a.kw:hover,.ann-bar a.kw:hover,.fe a.kw:hover,.citation-demo a.kw:hover,.citation-item a.kw:hover,.citation-text a.kw:hover,footer a.kw:hover,.footer-body a.kw:hover,.bs-card.dark a.kw:hover{color:#FCD34D !important;border-bottom-color:rgba(252,211,77,0.7) !important}
 .hero-sub a.kw:hover,.page-hero-inner a.kw:hover,.ph-w a.kw:hover,.blog-hero a.kw:hover,.page-hero a.kw:hover{color:#FCD34D !important;border-bottom-color:rgba(252,211,77,0.7) !important}
 .nav-wrap{position:sticky;top:0;z-index:150;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-100);transition:box-shadow var(--transition)}
 .nav-wrap.scrolled{box-shadow:var(--shadow)}
@@ -181,6 +182,10 @@ body.js-ready .fade-up.visible{opacity:1;transform:none}
 .bs-card.dark{background:#0F2A5C;border-color:#0F2A5C}
 .bs-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:14px;padding-bottom:8px;border-top:2px solid rgba(26,86,160,.3);padding-top:10px}
 .bs-card.dark .bs-title{color:rgba(255,255,255,.5)}
+.bs-card.dark .bs-link{color:rgba(255,255,255,.75);border-bottom-color:rgba(255,255,255,.15)}
+.bs-card.dark .bs-link:hover{color:#FCD34D}
+.bs-card.dark .bs-post a{color:rgba(255,255,255,.85)}
+.bs-card.dark .bs-post a:hover{color:#FCD34D}
 .bs-link{display:block;font-size:13px;color:#1A56A0;text-decoration:none;padding:7px 0;border-bottom:1px solid #e2e8f0;line-height:1.4}
 .bs-link:hover{color:#0F2A5C}
 .bs-link:last-child{border-bottom:none}
@@ -260,6 +265,15 @@ footer{background:var(--footer-bg)}
 .blog-hero a:not([class*="btn"]):hover {
   color: #FCD34D;
 }
+
+.blog-pagination{display:flex;align-items:center;justify-content:center;gap:16px;max-width:1200px;margin:0 auto 60px;padding:0 24px;flex-wrap:wrap}
+.page-nav{background:#fff;border:1px solid #e2e8f0;color:#0F2A5C;padding:10px 18px;border-radius:8px;font-size:13.5px;font-weight:600;cursor:pointer;transition:all .2s}
+.page-nav:hover:not(:disabled){border-color:#1A56A0;color:#1A56A0}
+.page-nav:disabled{opacity:.4;cursor:not-allowed}
+.page-numbers{display:flex;gap:8px}
+.page-btn{width:38px;height:38px;border-radius:8px;border:1px solid #e2e8f0;background:#fff;color:#0F2A5C;font-size:13.5px;font-weight:600;cursor:pointer;transition:all .2s}
+.page-btn:hover{border-color:#1A56A0;color:#1A56A0}
+.page-btn.active{background:#0F2A5C;border-color:#0F2A5C;color:#fff}
 </style>
 </head>
 <body>
@@ -271,227 +285,47 @@ footer{background:var(--footer-bg)}
   <p class="blog-listing-sub">Practical guides on getting your brand cited in ChatGPT, Perplexity, and Google AI — by <a href="/tandeep-sangra/" style="color:#F59E0B;text-decoration:none;font-weight:600">Tandeep Sangra</a>.</p>
 </div>
 <div class="posts-grid">
-<a class="post-card" href="/blog/how-to-rank-in-chatgpt/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">AI SEO Strategy</div>
-    <h2 class="post-card-title">How to Rank in ChatGPT: The Complete 2026 Guide</h2>
-    <p class="post-card-excerpt">ChatGPT and Perplexity rank brands through structured authority — not keywords. Covers Bing indexing, schema markup, entity recognition, and content structure.</p>
-    <div class="post-card-meta"><span>April 1, 2026</span><span>·</span><span>9 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/why-your-brand-is-invisible-to-ai/">
+<a class="post-card" data-page="1" href="/blog/which-social-platforms-improve-ai-search-visibility/">
   <div class="post-card-banner"></div>
   <div class="post-card-body">
     <div class="post-card-cat">AI Visibility</div>
-    <h2 class="post-card-title">Why Your Brand Is Invisible to AI Search — And How to Fix It</h2>
-    <p class="post-card-excerpt">Five specific gaps cause most brands to be invisible to ChatGPT and Perplexity. Each one is fixable within weeks.</p>
-    <div class="post-card-meta"><span>April 3, 2026</span><span>·</span><span>7 min read</span></div>
+    <h2 class="post-card-title">Which Social Platforms Improve AI Search Visibility?</h2>
+    <p class="post-card-excerpt">LinkedIn climbed from #11 to #5 in ChatGPT citations in three months. Reddit swings from 60% to 10% of responses within weeks. Real citation data across every major platform.</p>
+    <div class="post-card-meta"><span>July 15, 2026</span><span>·</span><span>9 min read</span></div>
     <span class="post-card-read">Read article →</span>
   </div>
 </a>
-<a class="post-card" href="/blog/aeo-vs-seo-whats-different/">
+<a class="post-card" data-page="1" href="/blog/ai-conversational-search-real-estate-agents/">
   <div class="post-card-banner"></div>
   <div class="post-card-body">
-    <div class="post-card-cat">AEO vs SEO</div>
-    <h2 class="post-card-title">AEO vs SEO: What's Different and Why It Matters in 2026</h2>
-    <p class="post-card-excerpt">SEO gets you ranked in blue links. AEO gets you cited in AI answers. They use completely different signals and serve different buyer journey stages.</p>
-    <div class="post-card-meta"><span>April 5, 2026</span><span>·</span><span>8 min read</span></div>
+    <div class="post-card-cat">AI Search & Real Estate</div>
+    <h2 class="post-card-title">The AI-Driven Homebuyer: How Conversational Search Is Replacing the Traditional Agent Search</h2>
+    <p class="post-card-excerpt">Buyers now describe what they want to ChatGPT instead of typing keywords into a portal. What that means for agents and brokerage owners.</p>
+    <div class="post-card-meta"><span>July 15, 2026</span><span>·</span><span>7 min read</span></div>
     <span class="post-card-read">Read article →</span>
   </div>
 </a>
-<a class="post-card" href="/blog/schema-markup-for-ai-citations/">
+<a class="post-card" data-page="1" href="/blog/how-patients-use-chatgpt-to-pick-doctors/">
   <div class="post-card-banner"></div>
   <div class="post-card-body">
-    <div class="post-card-cat">Technical AI SEO</div>
-    <h2 class="post-card-title">Schema Markup for AI Citations: The Technical Guide for 2026</h2>
-    <p class="post-card-excerpt">The 8 schema types with the highest impact on AI citation rates — including Person, FAQPage, Organization, and Article — with implementation and validation steps.</p>
-    <div class="post-card-meta"><span>April 8, 2026</span><span>·</span><span>10 min read</span></div>
+    <div class="post-card-cat">AI Search & Healthcare</div>
+    <h2 class="post-card-title">From Keywords to Symptoms: How Patients Use ChatGPT to Pick Doctors</h2>
+    <p class="post-card-excerpt">Patients describe symptoms and constraints to ChatGPT, not just search for a specialty. What that means for clinic and practice owners.</p>
+    <div class="post-card-meta"><span>July 15, 2026</span><span>·</span><span>7 min read</span></div>
     <span class="post-card-read">Read article →</span>
   </div>
 </a>
-<a class="post-card" href="/blog/ai-seo-audit-complete-guide/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">AI Visibility Audit</div>
-    <h2 class="post-card-title">The Complete AI Visibility Audit: How to Find and Fix Every Gap</h2>
-    <p class="post-card-excerpt">A 5-layer AI SEO audit covering technical crawlability, schema, entity recognition, content structure, and citation presence — with exact checks and fixes.</p>
-    <div class="post-card-meta"><span>April 9, 2026</span><span>·</span><span>11 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/how-perplexity-ranks-content/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Platform Guides</div>
-    <h2 class="post-card-title">How Perplexity Selects and Ranks Content in 2026</h2>
-    <p class="post-card-excerpt">Perplexity cites sources in 97% of responses. Here is exactly what it looks for when selecting citations and how to optimise your content for Perplexity.</p>
-    <div class="post-card-meta"><span>April 10, 2026</span><span>·</span><span>8 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/geo-guide-generative-engine-optimization/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">GEO</div>
-    <h2 class="post-card-title">GEO: The Complete Guide to Generative Engine Optimization</h2>
-    <p class="post-card-excerpt">The 7 GEO techniques that increase AI citation rates by up to 40% — based on Princeton and Georgia Tech research. Includes fluency optimisation, statistical density, and uniqueness signals.</p>
-    <div class="post-card-meta"><span>April 11, 2026</span><span>·</span><span>9 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/llms-txt-complete-guide/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Technical AI SEO</div>
-    <h2 class="post-card-title">llms.txt: What It Is and Why Every Website Needs One</h2>
-    <p class="post-card-excerpt">llms.txt tells ChatGPT, Perplexity, and Claude what your site is about and which pages to prioritise. It takes 30 minutes and measurably improves how AI represents your brand.</p>
-    <div class="post-card-meta"><span>April 12, 2026</span><span>·</span><span>6 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/entity-seo-for-ai-search/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Entity SEO</div>
-    <h2 class="post-card-title">Entity SEO: How to Make AI Systems Recognise Your Brand</h2>
-    <p class="post-card-excerpt">The 6 entity signals that make AI systems recognise and cite your brand — LinkedIn, Wikidata, G2, sameAs schema, consistent NAP, and media mentions.</p>
-    <div class="post-card-meta"><span>April 13, 2026</span><span>·</span><span>8 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/ai-seo-for-saas-companies/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Industry Guides</div>
-    <h2 class="post-card-title">AI SEO for SaaS Companies: The 2026 Playbook</h2>
-    <p class="post-card-excerpt">How SaaS companies get cited when buyers ask ChatGPT "what is the best tool for X?" — covering use-case pages, G2, entity signals, and comparison content.</p>
-    <div class="post-card-meta"><span>April 14, 2026</span><span>·</span><span>10 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/google-ai-overviews-optimization/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Google AI</div>
-    <h2 class="post-card-title">Google AI Overviews: How to Get Featured in 2026</h2>
-    <p class="post-card-excerpt">AI Overviews now appear on 25% of Google searches. When your brand IS cited, CTR is 35% higher. Six steps to get your brand featured in AI Overviews.</p>
-    <div class="post-card-meta"><span>April 15, 2026</span><span>·</span><span>9 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/ai-seo-content-strategy/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Content Strategy</div>
-    <h2 class="post-card-title">AI SEO Content Strategy: Writing Content AI Systems Actually Cite</h2>
-    <p class="post-card-excerpt">The AI-first content framework — structure, format, length, and writing patterns that consistently earn citations across ChatGPT, Perplexity, and Google AI.</p>
-    <div class="post-card-meta"><span>April 16, 2026</span><span>·</span><span>9 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/tandeep-sangra-ai-seo-expert/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">About</div>
-    <h2 class="post-card-title">Tandeep Sangra: AI Visibility Researcher & Consultant of She Innovates AI</h2>
-    <p class="post-card-excerpt">Tandeep Sangra is a Google AI certified AI SEO consultant specialising in AEO, GEO, and LLM Optimization for AI startups, SaaS, and B2B tech brands globally.</p>
-    <div class="post-card-meta"><span>April 17, 2026</span><span>·</span><span>5 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/ai-citation-monitoring-guide/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">AI Citation</div>
-    <h2 class="post-card-title">AI Citation Monitoring: Track Your Brand Across ChatGPT & Perplexity</h2>
-    <p class="post-card-excerpt">How to systematically track your brand citation rate across ChatGPT, Perplexity, Gemini, and Google AI — with the 5 metrics that matter and tool recommendations.</p>
-    <div class="post-card-meta"><span>April 18, 2026</span><span>·</span><span>7 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/llm-recommendations-bias-self-promotion/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">AI Research</div>
-    <h2 class="post-card-title">Visibility ≠ Credibility: Self-Promotion Bias in LLM Recommendations</h2>
-    <p class="post-card-excerpt">Why LLMs tend to favor high-visibility sources over true credibility—and how this bias impacts brand discovery, trust, and decision-making in AI-driven search.</p>
-    <div class="post-card-meta"><span>April 18, 2026</span><span>·</span><span>6 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/top-ai-seo-consultants-and-agencies-in-india/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Industry Guide</div>
-    <h2 class="post-card-title">Top AI SEO Consultants & Agencies in India for 2026</h2>
-    <p class="post-card-excerpt">The definitive list of India's top AI SEO consultants and agencies for 2026 — ranked by AEO, GEO, and LLM optimization expertise. Who B2B startups should hire and why.</p>
-    <div class="post-card-meta"><span>April 26, 2026</span><span>·</span><span>10 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/how-startups-outrank-competitors-in-chatgpt-perplexity/">
+<a class="post-card" data-page="1" href="/blog/is-seo-still-relevant-for-generative-ai-search/">
   <div class="post-card-banner"></div>
   <div class="post-card-body">
     <div class="post-card-cat">AI SEO Strategy</div>
-    <h2 class="post-card-title">How Startups Outrank Competitors in ChatGPT & Perplexity</h2>
-    <p class="post-card-excerpt">A complete AI SEO playbook for startups — Bing indexing, FAQPage schema, entity signals, GEO content structure, and Reddit authority. Step-by-step with honest timelines.</p>
-    <div class="post-card-meta"><span>April 26, 2026</span><span>·</span><span>10 min read</span></div>
+    <h2 class="post-card-title">Is SEO Still Relevant for Generative AI Search?</h2>
+    <p class="post-card-excerpt">Google's own official guidance says SEO fundamentals remain the foundation for AI search visibility — but also says several popular AEO/GEO tactics don't matter for Google specifically. Here's the honest breakdown.</p>
+    <div class="post-card-meta"><span>July 15, 2026</span><span>·</span><span>8 min read</span></div>
     <span class="post-card-read">Read article →</span>
   </div>
 </a>
-<a class="post-card" href="/blog/3-mistakes-kill-ai-recommendation-chances/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Critical Mistakes</div>
-    <h2 class="post-card-title">3 Mistakes That Kill Your Chances of Getting Recommended by AI</h2>
-    <p class="post-card-excerpt">Learn why your brand isn’t getting picked by AI systems—and what needs to change to start showing up in recommendations.</p>
-    <div class="post-card-meta"><span>May 2, 2026</span><span>·</span><span>11 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/seo-for-doctors-and-medical-clinics/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Healthcare SEO</div>
-    <h2 class="post-card-title">SEO for Doctors & Medical Clinics: Get More Patients in 2026</h2>
-    <p class="post-card-excerpt">Why your clinic isn't showing up on Google — and how to fix it. Local SEO, Google Maps rankings and AI search for GPs, dermatologists, cardiologists and specialists.Audit from $247</p>
-    <div class="post-card-meta"><span>May 6, 2026</span><span>·</span><span>16 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/seo-for-law-firms-ai-search-guide/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">Legal SEO</div>
-    <h2 class="post-card-title">SEO for Law Firms, Lawyers & Attorneys: Rank on Google & AI Search</h2>
-    <p class="post-card-excerpt">Your firm dropped out of rankings or doesn't appear in AI Search recommendations. The exact structural fixes — legal schema, E-E-A-T, Bing indexing, local citations — that restore both Google and AI visibility.</p>
-    <div class="post-card-meta"><span>May 19, 2026</span><span>·</span><span>14 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/ai-search-shifts-marketers-cant-ignore-2026/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">AI Search Strategy</div>
-    <h2 class="post-card-title">6 AI Search Shifts Marketers Can't Ignore Before Q3 2026</h2>
-    <p class="post-card-excerpt">93% zero-click in AI Mode. ChatGPT traffic converting at 14.2%. Citation overlap with Google collapsed to 17%. Six data-backed shifts reshaping how buyers find brands — and what to do about each one.</p>
-    <div class="post-card-meta"><span>June 13, 2026</span><span>·</span><span>13 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/organic-ctr-decline-ai-overviews-or-competitors/">
-  <div class="post-card-banner"></div>
-  <div class="post-card-body">
-    <div class="post-card-cat">SEO & AI Search Strategy</div>
-    <h2 class="post-card-title">Organic CTR Decline: AI Overviews vs Competitors — Two Different Fixes</h2>
-    <p class="post-card-excerpt">Your blended CTR drop in Google Search Console is combining two completely different losses into one number — and each one needs a different fix. Here's how to diagnose which problem you actually have.</p>
-    <div class="post-card-meta"><span>June 13, 2026</span><span>·</span><span>12 min read</span></div>
-    <span class="post-card-read">Read article →</span>
-  </div>
-</a>
-<a class="post-card" href="/blog/ai-overviews-stealing-transactional-traffic-how-to-get-it-back/">
+<a class="post-card" data-page="1" href="/blog/ai-overviews-stealing-transactional-traffic-how-to-get-it-back/">
   <div class="post-card-banner"></div>
   <div class="post-card-body">
     <div class="post-card-cat">AI Overviews & Search Visibility</div>
@@ -501,7 +335,233 @@ footer{background:var(--footer-bg)}
     <span class="post-card-read">Read article →</span>
   </div>
 </a>
+<a class="post-card" data-page="1" href="/blog/ai-search-shifts-marketers-cant-ignore-2026/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">AI Search Strategy</div>
+    <h2 class="post-card-title">6 AI Search Shifts Marketers Can't Ignore Before Q3 2026</h2>
+    <p class="post-card-excerpt">93% zero-click in AI Mode. ChatGPT traffic converting at 14.2%. Citation overlap with Google collapsed to 17%. Six data-backed shifts reshaping how buyers find brands — and what to do about each one.</p>
+    <div class="post-card-meta"><span>June 13, 2026</span><span>·</span><span>13 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="1" href="/blog/organic-ctr-decline-ai-overviews-or-competitors/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">SEO & AI Search Strategy</div>
+    <h2 class="post-card-title">Organic CTR Decline: AI Overviews vs Competitors — Two Different Fixes</h2>
+    <p class="post-card-excerpt">Your blended CTR drop in Google Search Console is combining two completely different losses into one number — and each one needs a different fix. Here's how to diagnose which problem you actually have.</p>
+    <div class="post-card-meta"><span>June 13, 2026</span><span>·</span><span>12 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="1" href="/blog/seo-for-law-firms-ai-search-guide/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Legal SEO</div>
+    <h2 class="post-card-title">SEO for Law Firms, Lawyers & Attorneys: Rank on Google & AI Search</h2>
+    <p class="post-card-excerpt">Your firm dropped out of rankings or doesn't appear in AI Search recommendations. The exact structural fixes — legal schema, E-E-A-T, Bing indexing, local citations — that restore both Google and AI visibility.</p>
+    <div class="post-card-meta"><span>May 19, 2026</span><span>·</span><span>14 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="1" href="/blog/seo-for-doctors-and-medical-clinics/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Healthcare SEO</div>
+    <h2 class="post-card-title">SEO for Doctors & Medical Clinics: Get More Patients in 2026</h2>
+    <p class="post-card-excerpt">Why your clinic isn't showing up on Google — and how to fix it. Local SEO, Google Maps rankings and AI search for GPs, dermatologists, cardiologists and specialists.Audit from $247</p>
+    <div class="post-card-meta"><span>May 6, 2026</span><span>·</span><span>16 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/3-mistakes-kill-ai-recommendation-chances/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Critical Mistakes</div>
+    <h2 class="post-card-title">3 Mistakes That Kill Your Chances of Getting Recommended by AI</h2>
+    <p class="post-card-excerpt">Learn why your brand isn’t getting picked by AI systems—and what needs to change to start showing up in recommendations.</p>
+    <div class="post-card-meta"><span>May 2, 2026</span><span>·</span><span>11 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/top-ai-seo-consultants-and-agencies-in-india/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Industry Guide</div>
+    <h2 class="post-card-title">Top AI SEO Consultants & Agencies in India for 2026</h2>
+    <p class="post-card-excerpt">The definitive list of India's top AI SEO consultants and agencies for 2026 — ranked by AEO, GEO, and LLM optimization expertise. Who B2B startups should hire and why.</p>
+    <div class="post-card-meta"><span>April 26, 2026</span><span>·</span><span>10 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/how-startups-outrank-competitors-in-chatgpt-perplexity/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">AI SEO Strategy</div>
+    <h2 class="post-card-title">How Startups Outrank Competitors in ChatGPT & Perplexity</h2>
+    <p class="post-card-excerpt">A complete AI SEO playbook for startups — Bing indexing, FAQPage schema, entity signals, GEO content structure, and Reddit authority. Step-by-step with honest timelines.</p>
+    <div class="post-card-meta"><span>April 26, 2026</span><span>·</span><span>10 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/ai-citation-monitoring-guide/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">AI Citation</div>
+    <h2 class="post-card-title">AI Citation Monitoring: Track Your Brand Across ChatGPT & Perplexity</h2>
+    <p class="post-card-excerpt">How to systematically track your brand citation rate across ChatGPT, Perplexity, Gemini, and Google AI — with the 5 metrics that matter and tool recommendations.</p>
+    <div class="post-card-meta"><span>April 18, 2026</span><span>·</span><span>7 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/llm-recommendations-bias-self-promotion/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">AI Research</div>
+    <h2 class="post-card-title">Visibility ≠ Credibility: Self-Promotion Bias in LLM Recommendations</h2>
+    <p class="post-card-excerpt">Why LLMs tend to favor high-visibility sources over true credibility—and how this bias impacts brand discovery, trust, and decision-making in AI-driven search.</p>
+    <div class="post-card-meta"><span>April 18, 2026</span><span>·</span><span>6 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/tandeep-sangra-ai-seo-expert/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">About</div>
+    <h2 class="post-card-title">Tandeep Sangra: AI Visibility Researcher & Consultant of She Innovates AI</h2>
+    <p class="post-card-excerpt">Tandeep Sangra is a Google AI certified AI SEO consultant specialising in AEO, GEO, and LLM Optimization for AI startups, SaaS, and B2B tech brands globally.</p>
+    <div class="post-card-meta"><span>April 17, 2026</span><span>·</span><span>5 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/ai-seo-content-strategy/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Content Strategy</div>
+    <h2 class="post-card-title">AI SEO Content Strategy: Writing Content AI Systems Actually Cite</h2>
+    <p class="post-card-excerpt">The AI-first content framework — structure, format, length, and writing patterns that consistently earn citations across ChatGPT, Perplexity, and Google AI.</p>
+    <div class="post-card-meta"><span>April 16, 2026</span><span>·</span><span>9 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/google-ai-overviews-optimization/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Google AI</div>
+    <h2 class="post-card-title">Google AI Overviews: How to Get Featured in 2026</h2>
+    <p class="post-card-excerpt">AI Overviews now appear on 25% of Google searches. When your brand IS cited, CTR is 35% higher. Six steps to get your brand featured in AI Overviews.</p>
+    <div class="post-card-meta"><span>April 15, 2026</span><span>·</span><span>9 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="2" href="/blog/ai-seo-for-saas-companies/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Industry Guides</div>
+    <h2 class="post-card-title">AI SEO for SaaS Companies: The 2026 Playbook</h2>
+    <p class="post-card-excerpt">How SaaS companies get cited when buyers ask ChatGPT "what is the best tool for X?" — covering use-case pages, G2, entity signals, and comparison content.</p>
+    <div class="post-card-meta"><span>April 14, 2026</span><span>·</span><span>10 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/entity-seo-for-ai-search/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Entity SEO</div>
+    <h2 class="post-card-title">Entity SEO: How to Make AI Systems Recognise Your Brand</h2>
+    <p class="post-card-excerpt">The 6 entity signals that make AI systems recognise and cite your brand — LinkedIn, Wikidata, G2, sameAs schema, consistent NAP, and media mentions.</p>
+    <div class="post-card-meta"><span>April 13, 2026</span><span>·</span><span>8 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/llms-txt-complete-guide/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Technical AI SEO</div>
+    <h2 class="post-card-title">llms.txt: What It Is and Why Every Website Needs One</h2>
+    <p class="post-card-excerpt">llms.txt tells ChatGPT, Perplexity, and Claude what your site is about and which pages to prioritise. It takes 30 minutes and measurably improves how AI represents your brand.</p>
+    <div class="post-card-meta"><span>April 12, 2026</span><span>·</span><span>6 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/geo-guide-generative-engine-optimization/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">GEO</div>
+    <h2 class="post-card-title">GEO: The Complete Guide to Generative Engine Optimization</h2>
+    <p class="post-card-excerpt">The 7 GEO techniques that increase AI citation rates by up to 40% — based on Princeton and Georgia Tech research. Includes fluency optimisation, statistical density, and uniqueness signals.</p>
+    <div class="post-card-meta"><span>April 11, 2026</span><span>·</span><span>9 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/how-perplexity-ranks-content/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Platform Guides</div>
+    <h2 class="post-card-title">How Perplexity Selects and Ranks Content in 2026</h2>
+    <p class="post-card-excerpt">Perplexity cites sources in 97% of responses. Here is exactly what it looks for when selecting citations and how to optimise your content for Perplexity.</p>
+    <div class="post-card-meta"><span>April 10, 2026</span><span>·</span><span>8 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/ai-seo-audit-complete-guide/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">AI Visibility Audit</div>
+    <h2 class="post-card-title">The Complete AI Visibility Audit: How to Find and Fix Every Gap</h2>
+    <p class="post-card-excerpt">A 5-layer AI SEO audit covering technical crawlability, schema, entity recognition, content structure, and citation presence — with exact checks and fixes.</p>
+    <div class="post-card-meta"><span>April 9, 2026</span><span>·</span><span>11 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/schema-markup-for-ai-citations/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">Technical AI SEO</div>
+    <h2 class="post-card-title">Schema Markup for AI Citations: The Technical Guide for 2026</h2>
+    <p class="post-card-excerpt">The 8 schema types with the highest impact on AI citation rates — including Person, FAQPage, Organization, and Article — with implementation and validation steps.</p>
+    <div class="post-card-meta"><span>April 8, 2026</span><span>·</span><span>10 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/aeo-vs-seo-whats-different/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">AEO vs SEO</div>
+    <h2 class="post-card-title">AEO vs SEO: What's Different and Why It Matters in 2026</h2>
+    <p class="post-card-excerpt">SEO gets you ranked in blue links. AEO gets you cited in AI answers. They use completely different signals and serve different buyer journey stages.</p>
+    <div class="post-card-meta"><span>April 5, 2026</span><span>·</span><span>8 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/why-your-brand-is-invisible-to-ai/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">AI Visibility</div>
+    <h2 class="post-card-title">Why Your Brand Is Invisible to AI Search — And How to Fix It</h2>
+    <p class="post-card-excerpt">Five specific gaps cause most brands to be invisible to ChatGPT and Perplexity. Each one is fixable within weeks.</p>
+    <div class="post-card-meta"><span>April 3, 2026</span><span>·</span><span>7 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
+<a class="post-card" data-page="3" href="/blog/how-to-rank-in-chatgpt/">
+  <div class="post-card-banner"></div>
+  <div class="post-card-body">
+    <div class="post-card-cat">AI SEO Strategy</div>
+    <h2 class="post-card-title">How to Rank in ChatGPT: The Complete 2026 Guide</h2>
+    <p class="post-card-excerpt">ChatGPT and Perplexity rank brands through structured authority — not keywords. Covers Bing indexing, schema markup, entity recognition, and content structure.</p>
+    <div class="post-card-meta"><span>April 1, 2026</span><span>·</span><span>9 min read</span></div>
+    <span class="post-card-read">Read article →</span>
+  </div>
+</a>
 </div>
+<div class="blog-pagination" id="blogPagination">
+  <button class="page-nav" id="pagePrev" onclick="changePage(-1)" disabled>← Previous</button>
+  <div class="page-numbers"><button class="page-btn active" onclick="goToPage(1)" data-page-btn="1">1</button><button class="page-btn" onclick="goToPage(2)" data-page-btn="2">2</button><button class="page-btn" onclick="goToPage(3)" data-page-btn="3">3</button></div>
+  <button class="page-nav" id="pageNext" onclick="changePage(1)">Next →</button>
+</div>
+
 
 <div style="max-width:800px;margin:0 auto;padding:0 24px 80px;text-align:center">
   <div style="background:#f8fafc;border:2px solid #e2e8f0;border-radius:16px;padding:40px 32px">
@@ -536,7 +596,7 @@ function toggleMega(name) {
   }
 }
 function closeAllMega() {
-  ['services','industries','learn','about'].forEach(n => {
+  ['services','industries','learn','newsroom','about'].forEach(n => {
     const p = document.getElementById('mega-' + n);
     const t = document.getElementById('nt-' + n);
     if (p) p.classList.remove('open');
@@ -617,6 +677,44 @@ document.addEventListener('click', e => {
 function toggleMobile() {
   document.getElementById('mobileNav').classList.toggle('open');
 }
+</script>
+
+<script>
+(function() {
+  const PER_PAGE = 9;
+  let currentPage = 1;
+  const cards = Array.from(document.querySelectorAll('.post-card'));
+  const totalPages = Math.max(...cards.map(c => parseInt(c.dataset.page, 10)));
+
+  function render() {
+    cards.forEach(c => {
+      c.style.display = (parseInt(c.dataset.page, 10) === currentPage) ? '' : 'none';
+    });
+    document.querySelectorAll('.page-btn').forEach(btn => {
+      btn.classList.toggle('active', parseInt(btn.dataset.pageBtn, 10) === currentPage);
+    });
+    document.getElementById('pagePrev').disabled = currentPage === 1;
+    document.getElementById('pageNext').disabled = currentPage === totalPages;
+    document.getElementById('blogPagination').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  window.goToPage = function(p) {
+    currentPage = p;
+    render();
+  };
+  window.changePage = function(delta) {
+    const next = currentPage + delta;
+    if (next >= 1 && next <= totalPages) {
+      currentPage = next;
+      render();
+    }
+  };
+
+  // Initial render without scrolling on page load
+  cards.forEach(c => {
+    c.style.display = (parseInt(c.dataset.page, 10) === 1) ? '' : 'none';
+  });
+})();
 </script>
 </body>
 </html>

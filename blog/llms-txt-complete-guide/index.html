@@ -35,7 +35,8 @@
 html{scroll-behavior:smooth;font-size:16px}
 body{font-family:'Sora',sans-serif;color:var(--text);background:#fff;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a.kw{color:var(--blue);text-decoration:none;border-bottom:1px dotted rgba(26,86,160,0.4);transition:border-color .2s,color .2s}
-a.kw:hover{color:var(--navy);border-bottom-color:var(--blue)}
+a.kw:hover{color:#D97706;border-bottom-color:#D97706}
+.hero-sub a.kw:hover,.page-hero-inner a.kw:hover,.ph-w a.kw:hover,.blog-hero a.kw:hover,.page-hero a.kw:hover,.ph a.kw:hover,.hero a.kw:hover,.blog-listing-hero a.kw:hover,.cta-section a.kw:hover,.dark a.kw:hover,.featured a.kw:hover,.footer-top a.kw:hover,.how-visual a.kw:hover,.inline-cta a.kw:hover,.queries-section a.kw:hover,.rel-sec a.kw:hover,.stats-bar a.kw:hover,.takeaway a.kw:hover,.ann-bar a.kw:hover,.fe a.kw:hover,.citation-demo a.kw:hover,.citation-item a.kw:hover,.citation-text a.kw:hover,footer a.kw:hover,.footer-body a.kw:hover,.bs-card.dark a.kw:hover{color:#FCD34D !important;border-bottom-color:rgba(252,211,77,0.7) !important}
 .hero-sub a.kw:hover,.page-hero-inner a.kw:hover,.ph-w a.kw:hover,.blog-hero a.kw:hover,.page-hero a.kw:hover{color:#FCD34D !important;border-bottom-color:rgba(252,211,77,0.7) !important}
 .nav-wrap{position:sticky;top:0;z-index:150;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-100);transition:box-shadow var(--transition)}
 .nav-wrap.scrolled{box-shadow:var(--shadow)}
@@ -179,6 +180,10 @@ body.js-ready .fade-up.visible{opacity:1;transform:none}
 .bs-card.dark{background:#0F2A5C;border-color:#0F2A5C}
 .bs-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:14px;padding-bottom:8px;border-top:2px solid rgba(26,86,160,.3);padding-top:10px}
 .bs-card.dark .bs-title{color:rgba(255,255,255,.5)}
+.bs-card.dark .bs-link{color:rgba(255,255,255,.75);border-bottom-color:rgba(255,255,255,.15)}
+.bs-card.dark .bs-link:hover{color:#FCD34D}
+.bs-card.dark .bs-post a{color:rgba(255,255,255,.85)}
+.bs-card.dark .bs-post a:hover{color:#FCD34D}
 .bs-link{display:block;font-size:13px;color:#1A56A0;text-decoration:none;padding:7px 0;border-bottom:1px solid #e2e8f0;line-height:1.4}
 .bs-link:hover{color:#0F2A5C}
 .bs-link:last-child{border-bottom:none}
@@ -305,7 +310,7 @@ function toggleMega(name) {
   }
 }
 function closeAllMega() {
-  ['services','industries','learn','about'].forEach(n => {
+  ['services','industries','learn','newsroom','about'].forEach(n => {
     const p = document.getElementById('mega-' + n);
     const t = document.getElementById('nt-' + n);
     if (p) p.classList.remove('open');
