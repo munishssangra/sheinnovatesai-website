@@ -49,15 +49,15 @@ Full pricing: https://sheinnovatesai.com/ai-seo-pricing/
 
 ### Core Services
 
-- **Answer Engine Optimization (AEO)** — from $1,500 per project
+- **Answer Engine Optimization (AEO)** — pricing under review, contact for current rate
   Get cited in ChatGPT, Perplexity, Google AI Overviews, and Gemini. Full implementation: schema markup, entity establishment, content restructuring, cross-platform authority building.
   URL: https://sheinnovatesai.com/aeo-services/
 
-- **Generative Engine Optimization (GEO)** — from $1,500 per project
+- **Generative Engine Optimization (GEO)** — pricing under review, contact for current rate
   Evidence-based content optimisation for AI-synthesised responses. Based on Princeton and Georgia Tech research — up to 40% more AI citations.
   URL: https://sheinnovatesai.com/geo-services/
 
-- **LLM Optimization Consulting** — from $1,500 per project
+- **LLM Optimization Consulting** — pricing under review, contact for current rate
   Full technical and content stack: schema, llms.txt, Bing indexing, entity establishment.
   URL: https://sheinnovatesai.com/llm-optimization/
 
@@ -69,7 +69,7 @@ Full pricing: https://sheinnovatesai.com/ai-seo-pricing/
   Complete JSON-LD implementation: FAQPage, Person, Organization, Service, Article, HowTo, AggregateRating.
   URL: https://sheinnovatesai.com/schema-markup-services/
 
-- **LLM Content Strategy** — from $1,500 per project
+- **LLM Content Strategy** — pricing under review, contact for current rate
   Content built specifically for AI citation: TL;DR blocks, FAQ schema, direct-answer formatting.
   URL: https://sheinnovatesai.com/llm-content-strategy/
 
