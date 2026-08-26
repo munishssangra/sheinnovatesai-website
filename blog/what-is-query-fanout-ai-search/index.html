@@ -445,6 +445,56 @@ div[style*="background:linear-gradient(135deg,#0f2a5c"] a {
 </aside>
 </div>
 {% include footer.html %}
+// ── Sticky nav shadow ──
+const navWrap = document.getElementById('navWrap');
+window.addEventListener('scroll', () => {
+  navWrap.classList.toggle('scrolled', window.scrollY > 10);
+});
+
+// ── Mega menus ──
+let activeMega = null;
+function toggleMega(name) {
+  const panel = document.getElementById('mega-' + name);
+  const trigger = document.getElementById('nt-' + name);
+  if (activeMega === name) {
+    panel.classList.remove('open');
+    trigger.classList.remove('open');
+    activeMega = null;
+  } else {
+    closeAllMega();
+    panel.classList.add('open');
+    trigger.classList.add('open');
+    activeMega = name;
+  }
+}
+function closeAllMega() {
+  ['services','industries','learn','newsroom','about'].forEach(n => {
+    const p = document.getElementById('mega-' + n);
+    const t = document.getElementById('nt-' + n);
+    if (p) p.classList.remove('open');
+    if (t) t.classList.remove('open');
+  });
+  activeMega = null;
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('.nav-item')) closeAllMega();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeAllMega();
+});
+
+// ── Mobile nav ──
+let mobileOpen = false;
+function toggleMobile() {
+  mobileOpen = !mobileOpen;
+  document.getElementById('mobileNav').classList.toggle('open', mobileOpen);
+}
+document.querySelectorAll('.mobile-nav-link, .mobile-nav-cta').forEach(el => {
+  el.addEventListener('click', () => {
+    mobileOpen = false;
+    document.getElementById('mobileNav').classList.remove('open');
+  });
+});
 <script>
 // ── FAQ ──
 function toggleFaq(btn) {
