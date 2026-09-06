@@ -1,0 +1,304 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+<meta name="theme-color" content="#0F2A5C">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Your Biggest GEO Problem Might Be Your Firewall | She Innovates AI</title>
+<meta name="description" content="Your site can be live and still invisible to AI. Here's how Cloudflare and other CDN/WAF layers silently block AI crawlers — and how to check if yours is one of them.">
+<link rel="canonical" href="https://sheinnovatesai.com/blog/geo-problem-firewall-cloudflare-ai-crawlers/">
+<meta property="og:title" content="Your Biggest GEO Problem Might Be Your Firewall">
+<meta property="og:description" content="Your site can be live and still invisible to AI. Here's how Cloudflare and other CDN/WAF layers silently block AI crawlers — and how to check if yours is one of them.">
+<meta property="og:url" content="https://sheinnovatesai.com/blog/geo-problem-firewall-cloudflare-ai-crawlers/">
+<meta property="og:type" content="article">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://sheinnovatesai.com/blog/geo-problem-firewall-cloudflare-ai-crawlers/#article", "headline": "Your Biggest GEO Problem Might Be Your Firewall", "description": "Your site can be live and still invisible to AI. Here's how Cloudflare and other CDN/WAF layers silently block AI crawlers — and how to check if yours is one of them.", "datePublished": "2026-09-06", "dateModified": "2026-09-06", "author": {"@type": "Person", "name": "Tandeep Sangra", "url": "https://sheinnovatesai.com/tandeep-sangra/"}, "publisher": {"@type": "Organization", "name": "She Innovates AI", "url": "https://sheinnovatesai.com/"}, "about": [{"@type": "Thing", "name": "GEO"}, {"@type": "Thing", "name": "AI Crawlability"}, {"@type": "Thing", "name": "Cloudflare"}], "mainEntityOfPage": {"@type": "WebPage", "@id": "https://sheinnovatesai.com/blog/geo-problem-firewall-cloudflare-ai-crawlers/"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Cloudflare block AI crawlers by default?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Since July 2025, Cloudflare blocks AI crawlers by default for new domains and free-plan customers. As of September 15, 2026, this extends further: 'mixed-use' crawlers that blend search, AI-agent, and training functions are blocked by default on any page hosting ads, unless the site owner manually overrides it."}}, {"@type": "Question", "name": "Does a 403 error mean my website is blocking AI?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. A 403 tells you access was denied, not who denied it or why. It could be your CMS, your hosting provider, or — increasingly common — your CDN/WAF layer like Cloudflare making that decision on your behalf, often without your knowledge."}}, {"@type": "Question", "name": "How do I check if Cloudflare is blocking AI crawlers on my site?", "acceptedAnswer": {"@type": "Answer", "text": "Log into your Cloudflare dashboard and check Security > Bots for AI-bot-specific rules, and check your WAF custom rules for anything blocking by user-agent. Also test manually: fetch your homepage and a few key pages with a tool that sends a GPTBot or similar user-agent string and see what status code and content comes back."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sheinnovatesai.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sheinnovatesai.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "GEO Problem: Your Firewall", "item": "https://sheinnovatesai.com/blog/geo-problem-firewall-cloudflare-ai-crawlers/"}]}]}</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RR0KXVWV88"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RR0KXVWV88');
+</script>
+<style>
+
+:root{--navy:#0F2A5C;--blue:#1A56A0;--gold:#F59E0B;--gold-light:#FCD34D;--white:#FFFFFF;--gray-50:#F4F6F9;--gray-100:#E8ECF2;--gray-600:#4A5568;--text:#0F1C2E;--text-muted:#5A6A7A;--green:#10B981;--footer-bg:#060F1E;--footer-surface:#0A1826;--radius:12px;--radius-lg:20px;--shadow:0 4px 24px rgba(15,42,92,0.10);--shadow-lg:0 12px 48px rgba(15,42,92,0.18);--transition:0.22s cubic-bezier(0.4,0,0.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Sora',sans-serif;color:var(--text);background:#fff;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a.kw{color:var(--blue);text-decoration:none;border-bottom:1px dotted rgba(26,86,160,0.4);transition:border-color .2s,color .2s}
+a.kw:hover{color:var(--navy);border-bottom-color:var(--blue)}
+.fade-up{opacity:1;transform:none;transition:opacity .55s ease,transform .55s ease}
+body.js-ready .fade-up{opacity:0;transform:translateY(24px)}
+body.js-ready .fade-up.visible{opacity:1;transform:none}
+
+/* Blog shared */
+.blog-hero{background:linear-gradient(135deg,#0F2A5C,#1A56A0);padding:56px 24px 44px;text-align:center;position:relative;overflow:hidden}
+.blog-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(58,130,246,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(58,130,246,.06) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.blog-hero-inner{max-width:860px;margin:0 auto;position:relative}
+.blog-label{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8);padding:4px 14px;border-radius:20px;font-size:11.5px;font-weight:600;margin-bottom:14px;text-transform:uppercase;letter-spacing:.06em}
+.blog-h1{font-family:'DM Serif Display',serif;font-size:clamp(26px,4vw,44px);color:#fff;line-height:1.2;margin:0 0 16px}
+.blog-meta{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.6);margin-top:4px}
+.blog-meta-dot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.3)}
+.blog-author-img{width:32px;height:32px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.3)}
+
+.blog-wrap{max-width:1100px;margin:0 auto;padding:56px 24px 80px;display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:start}
+.blog-content{font-size:15px;line-height:1.8;color:#334155}
+.blog-content h2{font-family:'DM Serif Display',serif;font-size:28px;color:#0F2A5C;margin:44px 0 14px;line-height:1.25}
+.blog-content h3{font-size:17px;font-weight:700;color:#0F2A5C;margin:32px 0 10px}
+.blog-content p{margin:0 0 18px}
+.blog-content ul,.blog-content ol{margin:0 0 18px 22px;padding:0}
+.blog-content li{margin-bottom:10px;line-height:1.7}
+.blog-content strong{font-weight:700;color:#0F2A5C}
+.blog-content a{color:#1A56A0;text-decoration:none;border-bottom:1px solid rgba(26,86,160,.25);transition:border-color .2s}
+.blog-content a:hover{border-color:#1A56A0}
+.blog-content blockquote{background:#EBF4FF;border-left:4px solid #1A56A0;padding:16px 22px;border-radius:0 10px 10px 0;margin:24px 0;font-size:14.5px;color:#1e3a5f;line-height:1.75}
+.blog-content blockquote strong{color:#0F2A5C}
+
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+.stat-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:center}
+.stat-num{font-size:26px;font-weight:800;color:#1A56A0;line-height:1;font-family:'DM Serif Display',serif}
+.stat-lbl{font-size:12px;color:#64748b;margin-top:6px;line-height:1.4}
+
+.takeaway{background:linear-gradient(135deg,#0F2A5C,#1A56A0);border-radius:14px;padding:28px 32px;margin:32px 0;color:#fff}
+.takeaway-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.55);font-weight:700;margin-bottom:8px}
+.takeaway h3{font-family:'DM Serif Display',serif;font-size:20px;color:#fff;margin:0 0 10px}
+.takeaway p{font-size:13.5px;color:rgba(255,255,255,.75);margin:0;line-height:1.7}
+
+.checklist{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:8px 26px;margin:24px 0}
+.checklist li{list-style:none;padding:14px 0;border-bottom:1px solid #eef1f5;display:flex;gap:12px;align-items:flex-start}
+.checklist li:last-child{border-bottom:none}
+.checklist .arrow{color:#F59E0B;font-weight:700;flex-shrink:0}
+
+.blog-cta{background:#f8fafc;border:2px solid #e2e8f0;border-radius:16px;padding:32px;text-align:center;margin:40px 0}
+.blog-cta h3{font-family:'DM Serif Display',serif;font-size:22px;color:#0F2A5C;margin:0 0 8px}
+.blog-cta p{font-size:14px;color:#64748b;margin:0 0 20px;line-height:1.6}
+.blog-cta-btn{display:inline-block;background:#F59E0B;color:#0F2A5C;padding:13px 28px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;transition:all .2s;border:none}
+.blog-cta-btn:hover{background:#D97706;transform:translateY(-2px)}
+
+.blog-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0 0}
+.blog-tag{background:#EBF4FF;color:#1A56A0;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500;text-decoration:none}
+.blog-tag:hover{background:#1A56A0;color:#fff}
+
+.faq-item{border-bottom:1px solid var(--gray-100);padding:4px 0}
+.faq-q{width:100%;background:none;border:none;cursor:pointer;padding:16px 0;display:flex;justify-content:space-between;align-items:center;font-size:15px;font-weight:500;color:var(--text);font-family:'Sora',sans-serif;text-align:left;gap:16px}
+.faq-q:hover{color:var(--blue)}
+.faq-icon{font-size:20px;font-weight:300;color:var(--blue);flex-shrink:0;transition:transform var(--transition)}
+.faq-q.open .faq-icon{transform:rotate(45deg)}
+.faq-a{font-size:14px;color:var(--text-muted);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s}
+.faq-a.open{max-height:600px;padding-bottom:16px}
+
+.blog-sidebar{display:flex;flex-direction:column;gap:20px}
+.bs-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:22px}
+.bs-card.dark{background:#0F2A5C;border-color:#0F2A5C}
+.bs-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:14px;padding-bottom:8px;border-top:2px solid rgba(26,86,160,.3);padding-top:10px}
+.bs-card.dark .bs-title{color:#fff}
+.bs-link{display:block;font-size:13px;color:#1A56A0;text-decoration:none;padding:7px 0;border-bottom:1px solid #e2e8f0;line-height:1.4}
+.bs-link:hover{color:#0F2A5C}
+.bs-link:last-child{border-bottom:none}
+.bs-cta-btn{display:block;background:#F59E0B;color:#0F2A5C;text-align:center;padding:12px;border-radius:8px;font-weight:700;font-size:13.5px;text-decoration:none;transition:all .2s;margin-bottom:8px}
+.bs-cta-btn:hover{background:#D97706}
+.bs-outline-btn{display:block;background:rgba(255,255,255,.08);color:rgba(255,255,255,.9);text-align:center;padding:11px;border-radius:8px;font-size:13px;text-decoration:none;border:1px solid rgba(255,255,255,.5);transition:all .2s}
+.bs-outline-btn:hover{background:rgba(255,255,255,.15)}
+.bs-post{display:flex;gap:12px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e2e8f0;align-items:flex-start}
+.bs-post:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.bs-post-num{width:24px;height:24px;border-radius:6px;background:#1A56A0;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.bs-post a{font-size:13px;color:#0F2A5C;text-decoration:none;line-height:1.4;font-weight:500}
+.bs-post a:hover{color:#1A56A0}
+
+@media(max-width:1024px){.blog-wrap{grid-template-columns:1fr}.blog-sidebar{display:none}}
+@media(max-width:768px){.stat-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.stat-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+{% include nav.html %}
+
+<div class="blog-hero">
+  <div class="blog-hero-grid"></div>
+  <div class="blog-hero-inner">
+    <div class="blog-label">GEO &amp; Technical AI SEO</div>
+    <h1 class="blog-h1">Your Biggest GEO Problem Might Be Your Firewall</h1>
+    <div class="blog-meta">
+      <span>Tandeep Sangra</span>
+      <div class="blog-meta-dot"></div>
+      <span>September 6, 2026</span>
+      <div class="blog-meta-dot"></div>
+      <span>8 min read</span>
+    </div>
+  </div>
+</div>
+
+<div class="blog-wrap">
+  <article class="blog-content">
+
+<blockquote><strong>TL;DR:</strong> Your website can be fully live, fast, and well-written — and still be invisible to AI, because the block isn't happening at the content layer. It's happening at the CDN/WAF layer sitting in front of it. Cloudflare now blocks AI crawlers by default for most new and free-plan sites, and as of September 2026 that default was extended even further. A 403 error tells you access was denied — it doesn't tell you who denied it. Before you diagnose a GEO content problem, rule out a firewall problem first.</blockquote>
+
+<div class="stat-grid">
+  <div class="stat-box"><div class="stat-num">~20%</div><div class="stat-lbl">of all internet traffic runs through Cloudflare's infrastructure — meaning this default setting affects a huge share of the web, often without site owners realizing it</div></div>
+  <div class="stat-box"><div class="stat-num">Jul 2025</div><div class="stat-lbl">Cloudflare became the first major infrastructure provider to block AI crawlers by default for new domains and free-plan customers</div></div>
+  <div class="stat-box"><div class="stat-num">Sep 2026</div><div class="stat-lbl">The default expanded further — "mixed-use" crawlers blending search, agent, and training functions are now blocked by default on any ad-hosting page</div></div>
+</div>
+
+<h2>The Website Is Live. But Can AI Actually Reach It?</h2>
+<p>Every AI visibility conversation eventually gets to the same question: why isn't my brand showing up in ChatGPT, Perplexity, or Google AI Mode? Most of the time, people go straight to the content layer — better schema, better entity signals, better structured answers.</p>
+<p>But there's a layer underneath all of that which almost nobody checks first: can the AI crawler even reach the page at all?</p>
+<p>A site can be fast, well-structured, and full of exactly the kind of content an AI system would want to cite — and still be functionally invisible, because something between the crawler and the content is quietly saying no.</p>
+
+<h2>A Real Pattern We Keep Running Into</h2>
+<p>Here's a scenario that comes up more often than you'd expect. A team is actively working on their AEO/GEO strategy, and their previous hosting setup kept getting in the way — blocking AI crawlers inconsistently, making it hard to even test whether their optimisation work was landing. So they move the domain behind Cloudflare specifically to get more granular control over crawler access, rather than leaving that decision to the hosting provider by default.</p>
+<p>Reasonable move. Except when they test the site afterward, they find something unexpected: the homepage triggers a Cloudflare verification challenge, while individual product pages are perfectly accessible and readable to the same crawler.</p>
+<p>That's the whole problem in miniature. The site isn't uniformly blocked or uniformly open — it's inconsistently gated, one layer removed from anything the content or SEO team actually controls.</p>
+
+<h2>Why a 403 Doesn't Mean What Most People Assume</h2>
+<p>When a crawler test comes back with a 403 or a challenge page, the instinct is to read that as "this website blocks AI." That's often the wrong conclusion.</p>
+<p>A 403 tells you access was denied. It does not tell you <em>who</em> denied it. It could be:</p>
+<ul>
+  <li>Your CMS or hosting provider's own bot-management defaults</li>
+  <li><code>robots.txt</code> explicitly disallowing that crawler</li>
+  <li>Your CDN or Web Application Firewall (WAF) making the call independently — increasingly the most common cause, and the one most site owners never think to check</li>
+</ul>
+<p>The distinction matters enormously, because each of those has a completely different fix — and if you diagnose it as a content or schema problem when it's actually a firewall setting, you can spend weeks optimising the wrong layer.</p>
+
+<h2>Cloudflare Blocks AI Crawlers by Default — And Most Site Owners Don't Know It</h2>
+<p>This is the part worth sitting with. In <a href="https://www.cloudflare.com/press/press-releases/2025/cloudflare-just-changed-how-ai-crawlers-scrape-the-internet-at-large/" target="_blank" rel="noopener" class="kw">a July 2025 announcement</a>, Cloudflare became the first major internet infrastructure provider to block AI crawlers from accessing content without permission by default. Roughly a fifth of all internet traffic runs through Cloudflare's network, so this wasn't a niche setting — it flipped the default for a huge share of the web in one move.</p>
+<p>And the story didn't stop there. As of September 15, 2026, Cloudflare tightened this further: crawlers that blend search indexing, AI-agent retrieval, and model training into one "mixed-use" identity are now blocked by default on any page that hosts ads — unless the site owner explicitly overrides it.</p>
+<p>If you set up your Cloudflare account any time recently, or if you're on a free plan, there's a real chance AI crawlers are being blocked right now without you ever having made that choice consciously. It's not malicious, and it's not even unreasonable — Cloudflare built this in response to years of AI companies scraping content with no attribution or compensation. But from a GEO standpoint, it means the setting most likely to be silently working against you is one you may never have touched.</p>
+
+<h2>The Real Goal Isn't "Allow All" or "Block All"</h2>
+<p>The instinctive fix, once you learn this, is to just flip everything open — allow every AI bot, disable every WAF rule that might catch one. That's the wrong instinct too.</p>
+<p>The goal isn't blanket permission. It's <strong>controlled AI accessibility</strong> — knowing precisely which crawlers can reach your content, what they actually receive when they do, and whether that content can be retrieved and cited the way you intend.</p>
+<p>Three questions capture this well:</p>
+<ul>
+  <li>Who is actually allowed to crawl your content?</li>
+  <li>What do they receive when they do — the real page, or a challenge screen?</li>
+  <li>Can AI systems retrieve and cite the specific pages you most want them to?</li>
+</ul>
+<p>Sometimes the GEO problem was never your content. It's the security layer sitting quietly between your content and the crawler trying to read it.</p>
+
+<h2>A Practical Checklist: Auditing Your Own AI Accessibility</h2>
+<div class="checklist">
+  <ul>
+    <li><span class="arrow">&rarr;</span><div><strong>Cloudflare AI bot / WAF settings</strong><br>Check Security &gt; Bots in your dashboard for AI-specific rules, and review your WAF custom rules for anything blocking by user-agent.</div></li>
+    <li><span class="arrow">&rarr;</span><div><strong>robots.txt</strong><br>Confirm you're not explicitly disallowing GPTBot, ClaudeBot, PerplexityBot, or other AI crawlers you actually want indexing you.</div></li>
+    <li><span class="arrow">&rarr;</span><div><strong>HTTP status codes</strong><br>Test key pages directly — a 200 with full content is very different from a 403 or a redirect to a challenge page.</div></li>
+    <li><span class="arrow">&rarr;</span><div><strong>What the crawler actually receives</strong><br>A status code alone isn't enough — check whether the response body is your real HTML or a CAPTCHA/verification page.</div></li>
+    <li><span class="arrow">&rarr;</span><div><strong>More than just the homepage</strong><br>Test your highest-value pages individually. As the pattern above shows, a homepage block and full page-level access can coexist on the same site.</div></li>
+  </ul>
+</div>
+
+<div class="takeaway">
+  <div class="takeaway-label">The Core Insight</div>
+  <h3>An invisible-to-AI website isn't always a content problem. Sometimes it's an infrastructure setting nobody remembered to check.</h3>
+  <p>Your CDN and WAF exist to protect you from real threats — but the same tools built to keep bad bots out can just as easily keep the AI systems you want citing you locked out too, often as a default you never explicitly chose. Checking this layer takes minutes. Assuming it's fine and optimising the wrong thing for weeks costs a lot more.</p>
+</div>
+
+<div class="blog-cta">
+  <h3>Is your website actually AI-accessible?</h3>
+  <p>Run a free AI Visibility Audit and find out whether your homepage, your key pages, and your technical setup are letting AI systems in — or quietly shutting them out.</p>
+  <a href="https://audit.sheinnovatesai.com" target="_blank" rel="noopener" class="blog-cta-btn">Run Your Free AI Visibility Audit &rarr;</a>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Does Cloudflare block AI crawlers by default?<span class="faq-icon">+</span></button><div class="faq-a">Yes. Since July 2025, Cloudflare blocks AI crawlers by default for new domains and free-plan customers. As of September 15, 2026, this extends further: "mixed-use" crawlers that blend search, AI-agent, and training functions are blocked by default on any page hosting ads, unless the site owner manually overrides it.</div></div>
+
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Does a 403 error mean my website is blocking AI?<span class="faq-icon">+</span></button><div class="faq-a">Not necessarily. A 403 tells you access was denied, not who denied it or why. It could be your CMS, your hosting provider, or — increasingly common — your CDN/WAF layer like Cloudflare making that decision on your behalf, often without your knowledge.</div></div>
+
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I check if Cloudflare is blocking AI crawlers on my site?<span class="faq-icon">+</span></button><div class="faq-a">Log into your Cloudflare dashboard and check Security &gt; Bots for AI-bot-specific rules, and check your WAF custom rules for anything blocking by user-agent. Also test manually: fetch your homepage and a few key pages with a tool that sends a GPTBot or similar user-agent string and see what status code and content comes back.</div></div>
+
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Should I just allow every AI bot to crawl my site?<span class="faq-icon">+</span></button><div class="faq-a">Not automatically. The goal isn't "allow everything" — it's controlled accessibility. Decide deliberately which crawlers you want reaching your content (the major AI search platforms you want citing you) versus bots you have no reason to allow, rather than defaulting to either extreme.</div></div>
+
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why would my homepage be blocked but my other pages accessible?<span class="faq-icon">+</span></button><div class="faq-a">This usually points to a rule or challenge specifically triggered on the root domain — sometimes from a security setting, a bot-fight-mode default, or a caching rule that behaves differently on the homepage than on individual URLs. It's a strong sign the block is happening at the CDN/WAF layer, not the content itself.</div></div>
+
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can a firewall issue really affect whether ChatGPT or Perplexity cites my brand?<span class="faq-icon">+</span></button><div class="faq-a">Yes, directly. If a crawler can't retrieve your page's actual content — because it hits a challenge screen instead of your HTML — there's nothing for the AI system to read, summarise, or cite from that page, regardless of how good the content itself is.</div></div>
+
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is this only a Cloudflare-specific issue?<span class="faq-icon">+</span></button><div class="faq-a">No — Cloudflare is simply the largest and most commonly discussed example because of how much of the web it sits in front of. Any CDN, WAF, or bot-management layer can behave the same way, so the checklist (status codes, actual response content, page-by-page testing) applies regardless of which provider you use.</div></div>
+
+<div class="blog-tags">
+  <a href="/blog/" class="blog-tag">GEO</a>
+  <a href="/blog/" class="blog-tag">AEO</a>
+  <a href="/blog/" class="blog-tag">AI Crawlability</a>
+  <a href="/blog/" class="blog-tag">Technical SEO</a>
+  <a href="/ai-seo-audit/" class="blog-tag">AI Visibility Audit</a>
+</div>
+
+  </article>
+
+  <aside class="blog-sidebar">
+    <div class="bs-card dark">
+      <div class="bs-title">Ready to Get Cited?</div>
+      <p style="font-size:13px;color:rgba(255,255,255,.65);margin:0 0 16px;line-height:1.6">Book a free 30-min strategy call. Walk away with 3 immediate actions to improve your AI visibility.</p>
+      <a class="bs-cta-btn" href="/contact/">📅 Book Free Strategy Call</a>
+      <a class="bs-outline-btn" href="/ai-seo-audit/">Start with $247 Audit →</a>
+    </div>
+    <div class="bs-card">
+      <div class="bs-title">More from the Blog</div>
+      <div class="bs-post"><div class="bs-post-num">1</div><div><a href="/blog/what-is-query-fanout-ai-search/">What Is Query Fan-Out?</a></div></div>
+      <div class="bs-post"><div class="bs-post-num">2</div><div><a href="/blog/llms-txt-complete-guide/">llms.txt: The Complete Guide</a></div></div>
+      <div class="bs-post"><div class="bs-post-num">3</div><div><a href="/blog/why-your-brand-is-invisible-to-ai/">Why Your Brand Is Invisible to AI Search</a></div></div>
+    </div>
+    <div class="bs-card">
+      <div class="bs-title">Free Resources</div>
+      <a class="bs-link" href="/ai-seo-checklist/">⬇ Free 50-Point AI SEO Checklist</a>
+      <a class="bs-link" href="/ai-seo-glossary/">AI SEO Glossary</a>
+      <a class="bs-link" href="/aeo-services/">AEO Services</a>
+      <a class="bs-link" href="/geo-services/">GEO Services</a>
+      <a class="bs-link" href="/ai-seo-pricing/">View Pricing</a>
+    </div>
+  </aside>
+</div>
+
+{% include footer.html %}
+{% include scripts.html %}
+
+<script>
+// ── FAQ ──
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const answer = item.querySelector('.faq-a');
+  const isOpen = answer.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el => {
+    el.querySelector('.faq-a').classList.remove('open');
+    el.querySelector('.faq-q').classList.remove('open');
+  });
+  if (!isOpen) {
+    answer.classList.add('open');
+    btn.classList.add('open');
+  }
+}
+
+// ── Scroll animations ──
+document.body.classList.add('js-ready');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// ── Smooth scroll for anchors ──
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
