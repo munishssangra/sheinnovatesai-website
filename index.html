@@ -1011,6 +1011,14 @@ section { padding: 80px 24px; }
 .service-card.advertising{border-color:#F5E6B8;background:#FFFDF7}
 .service-card.advertising:hover{border-color:#F0D98A}
 
+/* ── Service card badge (High Impact / Most Popular / etc.) — bolder, button-like ── */
+.service-price{font-size:12px;font-weight:800;letter-spacing:.02em;padding:6px 16px;border-radius:20px;display:inline-block;box-shadow:0 2px 6px rgba(15,42,92,0.08)}
+.service-price.badge-gold{color:var(--navy);background:var(--gold)}
+.service-price.badge-navy{color:#fff;background:var(--navy)}
+.service-price.badge-blue{color:#fff;background:var(--blue)}
+.service-price.badge-green{color:#fff;background:#1E8E5A}
+.service-price.badge-outline{color:var(--navy);background:#fff;border:1.5px solid var(--gray-100)}
+
 /* ── Service card glimpse list (replaces the old paragraph description) ── */
 .svc-glimpse{list-style:none;margin:0 0 16px;padding:0}
 .svc-glimpse li{position:relative;padding-left:16px;font-size:13.5px;color:var(--text-muted);line-height:1.6}
@@ -1919,7 +1927,7 @@ body { font-synthesis: none; }
           <li>Backed by Princeton &amp; Georgia Tech research</li>
           <li>Up to 40% more AI citations</li>
         </ul>
-        <div class="service-price">High Impact</div>
+        <div class="service-price badge-gold">High Impact</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">🎯</div>
@@ -1929,7 +1937,7 @@ body { font-synthesis: none; }
           <li>Structured data &amp; entity recognition</li>
           <li>Authority building</li>
         </ul>
-        <div class="service-price">Most Popular</div>
+        <div class="service-price badge-navy">Most Popular</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">⚙️</div>
@@ -1939,7 +1947,7 @@ body { font-synthesis: none; }
           <li>llms.txt &amp; Bing indexing setup</li>
           <li>Entity establishment across LLMs</li>
         </ul>
-        <div class="service-price">Technical Deep Dive</div>
+        <div class="service-price badge-blue">Technical Deep Dive</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">📋</div>
@@ -1949,7 +1957,7 @@ body { font-synthesis: none; }
           <li>Organization, Product, FAQ &amp; more</li>
           <li>Validated with Rich Results Test</li>
         </ul>
-        <div class="service-price">From $147</div>
+        <div class="service-price badge-green">From $147</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">📡</div>
@@ -1959,7 +1967,7 @@ body { font-synthesis: none; }
           <li>Citation rate trends &amp; competitor view</li>
           <li>Priority action list</li>
         </ul>
-        <div class="service-price">Ongoing</div>
+        <div class="service-price badge-outline">Ongoing</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">✍️</div>
@@ -1969,7 +1977,7 @@ body { font-synthesis: none; }
           <li>Original data &amp; evidence</li>
           <li>Built to be quoted by AI systems</li>
         </ul>
-        <div class="service-price">Ongoing</div>
+        <div class="service-price badge-outline">Ongoing</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">📍</div>
@@ -1979,7 +1987,7 @@ body { font-synthesis: none; }
           <li>Directory-wide cleanup</li>
           <li>Accurate local AI representation</li>
         </ul>
-        <div class="service-price">One-Time</div>
+        <div class="service-price badge-outline">One-Time</div>
       </div>
     </div>
 
@@ -1997,7 +2005,7 @@ body { font-synthesis: none; }
           <li>Targeting &amp; creative management</li>
           <li>Ongoing optimization</li>
         </ul>
-        <div class="service-price">Managed</div>
+        <div class="service-price badge-navy">Managed</div>
       </div>
       <div class="service-card advertising fade-up">
         <div class="service-icon">💰</div>
@@ -2007,7 +2015,7 @@ body { font-synthesis: none; }
           <li>Budget benchmarks</li>
           <li>What drives cost today</li>
         </ul>
-        <div class="service-price">Free Guide</div>
+        <div class="service-price badge-gold">Free Guide</div>
       </div>
       <div class="service-card advertising fade-up">
         <div class="service-icon">📖</div>
@@ -2017,7 +2025,7 @@ body { font-synthesis: none; }
           <li>Ad placement logic</li>
           <li>How OpenAI decides when to show ads</li>
         </ul>
-        <div class="service-price">Free Guide</div>
+        <div class="service-price badge-gold">Free Guide</div>
       </div>
     </div>
 
