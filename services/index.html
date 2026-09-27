@@ -145,12 +145,14 @@ footer{background:var(--footer-bg)}
 .signal-card h4{font-size:14.5px;color:var(--navy);margin-bottom:6px}
 .signal-card p{font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:0}
 
-.cmp-table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--gray-100)}
+.cmp-heading{font-family:'DM Serif Display',serif;font-size:20px;color:var(--navy);margin:8px 0 14px}
+.cmp-scroll{width:100%;overflow-x:auto;border-radius:14px;border:1px solid var(--gray-100)}
+.cmp-table{width:100%;min-width:720px;border-collapse:collapse;font-size:13.5px;background:#fff}
 .cmp-table th{background:var(--navy);color:#fff;text-align:left;padding:14px 18px;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
-.cmp-table td{padding:14px 18px;border-bottom:1px solid var(--gray-100);color:var(--text-muted);vertical-align:top}
+.cmp-table td{padding:14px 18px;border-bottom:1px solid var(--gray-100);color:var(--text-muted);vertical-align:top;min-width:170px}
 .cmp-table tr:last-child td{border-bottom:none}
 .cmp-table tr:nth-child(even) td{background:var(--gray-50)}
-.cmp-table td:first-child{font-weight:700;color:var(--navy);white-space:nowrap}
+.cmp-table td:first-child{font-weight:700;color:var(--navy);white-space:nowrap;min-width:120px}
 
 /* Scannable service card internals */
 .svc-hook{font-size:13.5px;color:var(--text);font-weight:600;line-height:1.6;margin:0 0 12px}
@@ -283,12 +285,15 @@ footer{background:var(--footer-bg)}
     </div>
   </div>
 
+  <h3 class="cmp-heading">Core Comparison</h3>
+<div class="cmp-scroll">
   <table class="cmp-table">
-    <tr><th>Aspect</th><th>Traditional SEO</th><th>AI Visibility (AEO / GEO)</th></tr>
-    <tr><td>Goal</td><td>Rank on a results page</td><td>Get cited, quoted, or recommended inside an AI answer</td></tr>
-    <tr><td>Primary Signal</td><td>Backlinks &amp; keyword density</td><td>Entity consistency, structured data, and answer clarity</td></tr>
-    <tr><td>Output</td><td>A ranked link the user clicks</td><td>A direct answer the user reads, often with no click at all</td></tr>
-    <tr><td>Measured By</td><td>Rankings &amp; organic traffic</td><td>Citation rate across ChatGPT, Gemini, and Perplexity</td></tr>
+    <tr><th>Aspect</th><th>Traditional SEO</th><th>AEO (Answer Engine Optimization)</th><th>GEO (Generative Engine Optimization)</th></tr>
+    <tr><td>Main Goal</td><td>Rank high in search results</td><td>Capture featured snippets and direct answers</td><td>Get cited or recommended in AI responses</td></tr>
+    <tr><td>Target Platforms</td><td>Google and Bing search pages</td><td>Voice search, snippets, and AI Overviews</td><td>ChatGPT, Perplexity, Claude, and Gemini</td></tr>
+    <tr><td>Primary Signals</td><td>Backlinks and keyword density</td><td>Q&amp;A formats, schema markup, and concise answers</td><td>Entity clarity, brand authority, and third-party data</td></tr>
+    <tr><td>User Action</td><td>Clicks a link to visit a site</td><td>Reads a direct answer (often zero-click)</td><td>Reads an AI summary with a source citation</td></tr>
+    <tr><td>Success Metric</td><td>Rankings and organic traffic</td><td>Featured snippet presence</td><td>Citation rate and Share of Model</td></tr>
   </table>
 </div>
 
