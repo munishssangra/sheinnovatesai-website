@@ -1001,6 +1001,22 @@ section { padding: 80px 24px; }
 .service-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px; }
 .service-price { font-size: 12px; font-weight: 600; color: var(--blue); background: rgba(26,86,160,0.07); padding: 4px 10px; border-radius: 20px; display: inline-block; }
 
+/* ── Services: group labels ── */
+.svc-group-head{display:flex;align-items:center;gap:12px;margin:44px 0 22px}
+.svc-group-head:first-of-type{margin-top:8px}
+.svc-group-badge{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:20px;white-space:nowrap}
+.svc-group-badge.a{color:var(--blue);background:rgba(26,86,160,0.08)}
+.svc-group-badge.b{color:#B7791F;background:#FEF3D6}
+.svc-group-line{height:1px;background:var(--gray-100);flex:1}
+.service-card.advertising{border-color:#F5E6B8;background:#FFFDF7}
+.service-card.advertising:hover{border-color:#F0D98A}
+.mini-signal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 8px}
+.mini-signal-card{background:white;border:1px solid var(--gray-100);border-radius:12px;padding:16px 18px;display:flex;gap:12px;align-items:flex-start}
+.mini-signal-num{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif}
+.mini-signal-text{font-size:13px;color:var(--navy);font-weight:600;line-height:1.4}
+@media (max-width:820px){.mini-signal-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.mini-signal-grid{grid-template-columns:1fr}}
+
 /* ── How It Works ── */
 .how-inner {
   display: grid;
@@ -1856,59 +1872,108 @@ body { font-synthesis: none; }
 <!-- ════ SERVICES ════ -->
 <section class="services-section" id="services">
   <div class="section-inner">
+
     <div class="fade-up" style="text-align:center">
       <span class="section-label">What We Do</span>
-      <h2 class="section-title">Explore Our AI Search Visibility Services</h2>
-      <p class="section-sub" style="max-width:760px;margin:0 auto">AI Search visibility depends on multiple signals, and not every business needs the same solution. We work across AI SEO, crawlability, content and information structure, AEO, GEO, LLM optimization, entity and brand signals, structured data, and citation monitoring. After understanding your business, goals, and current visibility, we'll identify the areas that matter most and recommend what you actually need.</p>
+      <h2 class="section-title">What AI Visibility Services Do We Offer?</h2>
+      <p class="section-sub" style="max-width:760px;margin:0 auto">AI Search visibility depends on multiple signals, and not every business needs the same solution. We work across AI SEO, crawlability, content and information structure, AEO, GEO, LLM optimization, entity and brand signals, structured data, and citation monitoring — from organic AI Visibility to paid AI Search Advertising.</p>
+    </div>
+
+    <!-- ── What LLMs Look For (listicle) ── -->
+    <div class="fade-up" style="margin-top:8px">
+      <p style="text-align:center;font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--text-muted);text-transform:uppercase;margin-bottom:4px">What LLMs Look For Before They Cite You</p>
+      <div class="mini-signal-grid">
+        <div class="mini-signal-card"><span class="mini-signal-num">1</span><span class="mini-signal-text">Structured data</span></div>
+        <div class="mini-signal-card"><span class="mini-signal-num">2</span><span class="mini-signal-text">Answer-first content</span></div>
+        <div class="mini-signal-card"><span class="mini-signal-num">3</span><span class="mini-signal-text">Consistent entity signals</span></div>
+        <div class="mini-signal-card"><span class="mini-signal-num">4</span><span class="mini-signal-text">Original data &amp; evidence</span></div>
+        <div class="mini-signal-card"><span class="mini-signal-num">5</span><span class="mini-signal-text">Credible external mentions</span></div>
+        <div class="mini-signal-card"><span class="mini-signal-num">6</span><span class="mini-signal-text">Accurate local &amp; NAP data</span></div>
+      </div>
+    </div>
+
+    <!-- ── GROUP A — AI VISIBILITY ── -->
+    <div class="svc-group-head fade-up">
+      <span class="svc-group-badge a">Group A — AI Visibility</span>
+      <span class="svc-group-line"></span>
     </div>
     <div class="services-grid">
       <div class="service-card fade-up">
-        <div class="service-icon">🎯</div>
-        <div class="service-name"><a href="/aeo-services/" class="kw">Answer Engine Optimization (AEO)</a></div>
-        <div class="service-desc">Get your brand cited in ChatGPT, Perplexity AI, Google AI Overviews, and all major AI answer engines. Structured data, entity recognition, and authority building.</div>
-        <div class="service-price">Most Popular</div>
-      </div>
-      <div class="service-card fade-up">
         <div class="service-icon">🧠</div>
-        <div class="service-name"><a href="/geo-services/" class="kw">Generative Engine Optimization (GEO)</a></div>
-        <div class="service-desc">Evidence-based content optimization to increase your inclusion in AI-generated responses. Based on Princeton and Georgia Tech research — up to 40% more AI citations.</div>
+        <div class="service-name">Generative Engine Optimization (GEO)</div>
+        <div class="service-desc">Evidence-based content optimization to increase inclusion in AI-generated responses — based on Princeton and Georgia Tech research.</div>
         <div class="service-price">High Impact</div>
       </div>
       <div class="service-card fade-up">
+        <div class="service-icon">🎯</div>
+        <div class="service-name">Answer Engine Optimization (AEO)</div>
+        <div class="service-desc">Get cited in ChatGPT, Perplexity, Google AI Overviews, and other AI answer engines through structured data and authority building.</div>
+        <div class="service-price">Most Popular</div>
+      </div>
+      <div class="service-card fade-up">
         <div class="service-icon">⚙️</div>
-        <div class="service-name"><a href="/llm-optimization/" class="kw">LLM Optimization</a> Consulting</div>
-        <div class="service-desc">Optimizing content for RAG architectures, Schema markup, llms.txt, Bing indexing, content restructuring, and entity establishment across all major LLMs.</div>
+        <div class="service-name">LLM Optimization Consulting</div>
+        <div class="service-desc">Technical + content stack work for RAG architectures, llms.txt, Bing indexing, and entity establishment across major LLMs.</div>
         <div class="service-price">Technical Deep Dive</div>
       </div>
       <div class="service-card fade-up">
-        <div class="service-icon">🔍</div>
-        <div class="service-name"><a href="/ai-seo-audit/" class="kw">AI Visibility Audit</a> — From $247</div>
-        <div class="service-desc">Comprehensive 3-day audit of your AI citation status across ChatGPT, Perplexity, Gemini, and Google AI. Schema analysis, competitor comparison, and 90-day roadmap.</div>
-        <div class="service-price">From $247</div>
-      </div>
-      <div class="service-card fade-up">
         <div class="service-icon">📋</div>
-        <div class="service-name"><a href="/schema-markup-services/" class="kw">Schema Markup</a> & Structured Data</div>
-        <div class="service-desc">Complete JSON-LD implementation — Person, Organization, Service, FAQ, HowTo, Article, Review, and AggregateRating schema. Validated with Google Rich Results Test.</div>
+        <div class="service-name">Schema Markup &amp; Structured Data</div>
+        <div class="service-desc">Full JSON-LD implementation — Organization, Product, WebSite, BreadcrumbList, VideoObject, and LocalBusiness — validated with Rich Results Test.</div>
         <div class="service-price">From $147</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">📡</div>
-        <div class="service-name"><a href="/ai-citation-monitoring/" class="kw">AI Citation Monitoring</a></div>
-        <div class="service-desc">Weekly tracking of your brand across ChatGPT, Perplexity, Gemini, and Google AI for 20–50 target queries. Citation rate trends, competitor analysis, and priority actions.</div>
+        <div class="service-name">AI Citation Monitoring</div>
+        <div class="service-desc">Weekly tracking across ChatGPT, Perplexity, Gemini, and Google AI for 20–50 target queries, with priority actions.</div>
         <div class="service-price">Ongoing</div>
       </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">✍️</div>
+        <div class="service-name">LLM Content Strategy</div>
+        <div class="service-desc">Content built to be extracted and quoted by AI systems — answer-first structure, original data, and citable evidence.</div>
+        <div class="service-price">Ongoing</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">📍</div>
+        <div class="service-name">Local Citation Cleanup &amp; NAP Correction</div>
+        <div class="service-desc">Fix inconsistent Name/Address/Phone data across directories so AI systems can confidently represent your business.</div>
+        <div class="service-price">One-Time</div>
+      </div>
     </div>
-    <div style="background:#FEF9E7;border:1px solid #F5E6B8;border-radius:16px;padding:28px 32px;margin-top:32px">
-  <span style="display:inline-block;background:#fff;border:1px solid #F5E6B8;color:#B7791F;font-weight:700;font-size:12px;letter-spacing:.05em;padding:6px 16px;border-radius:20px;margin-bottom:16px">IMPORTANT</span>
 
-  <p style="margin:0 0 20px;font-size:14px;color:#5A3E08;line-height:1.6">As AI Search evolves, we also help brands explore opportunities in AI Search Advertising — from ChatGPT Ads to emerging AI advertising platforms.</p>
+    <!-- ── GROUP B — AI SEARCH ADVERTISING ── -->
+    <div class="svc-group-head fade-up">
+      <span class="svc-group-badge b">Group B — AI Search Advertising</span>
+      <span class="svc-group-line"></span>
+    </div>
+    <div class="services-grid">
+      <div class="service-card advertising fade-up">
+        <div class="service-icon">🚀</div>
+        <div class="service-name"><a href="https://sheinnovatesai.com/chatgpt-ads-agency/" class="kw">Your ChatGPT Ads Partner</a></div>
+        <div class="service-desc">Full-service setup and management for ChatGPT Ads campaigns — targeting, creative, and optimization.</div>
+        <div class="service-price">Managed</div>
+      </div>
+      <div class="service-card advertising fade-up">
+        <div class="service-icon">💰</div>
+        <div class="service-name"><a href="https://sheinnovatesai.com/what-does-chatgpt-ads-cost/" class="kw">ChatGPT Ads Cost Guide</a></div>
+        <div class="service-desc">Real pricing ranges, budget benchmarks, and what drives cost on ChatGPT Ads campaigns today.</div>
+        <div class="service-price">Free Guide</div>
+      </div>
+      <div class="service-card advertising fade-up">
+        <div class="service-icon">📖</div>
+        <div class="service-name"><a href="https://sheinnovatesai.com/how-chatgpt-ads-work/" class="kw">How ChatGPT Ads Work</a></div>
+        <div class="service-desc">Targeting, context hints, placement, and how OpenAI decides when your ad is shown.</div>
+        <div class="service-price">Free Guide</div>
+      </div>
+    </div>
 
-  <div style="display:flex;flex-wrap:wrap;gap:12px">
-    <a href="https://sheinnovatesai.com/chatgpt-ads-agency/" target="_blank" rel="noopener" class="btn-primary" style="white-space:nowrap;flex:0 0 auto;padding:11px 20px;font-size:13.5px">Your ChatGPT Ads Partner &rarr;</a>
-    <a href="https://www.youtube.com/watch?v=E0O1BNRa4Xk" target="_blank" rel="noopener" class="btn-primary" style="white-space:nowrap;flex:0 0 auto;padding:11px 20px;font-size:13.5px">ChatGPT Ads, Explained in Video &rarr;</a>
+    <!-- ── Single CTA button: detailed overview lives on /services/ ── -->
+    <div class="fade-up" style="text-align:center;margin-top:40px">
+      <a href="https://sheinnovatesai.com/services/" class="btn-primary">View Detailed Services Overview &amp; Pricing &rarr;</a>
+    </div>
+
   </div>
-</div>
 </section>
 
 <!-- ════ INDUSTRIES ════ -->
