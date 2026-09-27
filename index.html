@@ -999,8 +999,6 @@ section { padding: 80px 24px; }
 }
 .service-name { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 8px; line-height: 1.3; }
 .service-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px; }
-.service-price { font-size: 12px; font-weight: 600; color: var(--blue); background: rgba(26,86,160,0.07); padding: 4px 10px; border-radius: 20px; display: inline-block; }
-
 /* ── Services: group labels ── */
 .svc-group-head{display:flex;align-items:center;gap:12px;margin:44px 0 22px}
 .svc-group-head:first-of-type{margin-top:8px}
@@ -1008,14 +1006,29 @@ section { padding: 80px 24px; }
 .svc-group-badge.a{color:var(--blue);background:rgba(26,86,160,0.08)}
 .svc-group-badge.b{color:#B7791F;background:#FEF3D6}
 .svc-group-line{height:1px;background:var(--gray-100);flex:1}
+
+/* ── Group B cards get a light gold tint to distinguish paid from organic ── */
 .service-card.advertising{border-color:#F5E6B8;background:#FFFDF7}
 .service-card.advertising:hover{border-color:#F0D98A}
+
+/* ── Service card glimpse list (replaces the old paragraph description) ── */
+.svc-glimpse{list-style:none;margin:0 0 16px;padding:0}
+.svc-glimpse li{position:relative;padding-left:16px;font-size:13.5px;color:var(--text-muted);line-height:1.6}
+.svc-glimpse li+li{margin-top:4px}
+.svc-glimpse li::before{content:'';position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--blue)}
+
+/* ── Compact "what LLMs look for" listicle ── */
 .mini-signal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 8px}
 .mini-signal-card{background:white;border:1px solid var(--gray-100);border-radius:12px;padding:16px 18px;display:flex;gap:12px;align-items:flex-start}
 .mini-signal-num{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif}
 .mini-signal-text{font-size:13px;color:var(--navy);font-weight:600;line-height:1.4}
-@media (max-width:820px){.mini-signal-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.mini-signal-grid{grid-template-columns:1fr}}
+
+@media (max-width:820px){
+  .mini-signal-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .mini-signal-grid{grid-template-columns:1fr}
+}
 
 /* ── How It Works ── */
 .how-inner {
@@ -1901,43 +1914,71 @@ body { font-synthesis: none; }
       <div class="service-card fade-up">
         <div class="service-icon">🧠</div>
         <div class="service-name">Generative Engine Optimization (GEO)</div>
-        <div class="service-desc">Evidence-based content optimization to increase inclusion in AI-generated responses — based on Princeton and Georgia Tech research.</div>
+        <ul class="svc-glimpse">
+          <li>Evidence-based content optimization</li>
+          <li>Backed by Princeton &amp; Georgia Tech research</li>
+          <li>Up to 40% more AI citations</li>
+        </ul>
         <div class="service-price">High Impact</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">🎯</div>
         <div class="service-name">Answer Engine Optimization (AEO)</div>
-        <div class="service-desc">Get cited in ChatGPT, Perplexity, Google AI Overviews, and other AI answer engines through structured data and authority building.</div>
+        <ul class="svc-glimpse">
+          <li>Cited in ChatGPT, Perplexity, AI Overviews</li>
+          <li>Structured data &amp; entity recognition</li>
+          <li>Authority building</li>
+        </ul>
         <div class="service-price">Most Popular</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">⚙️</div>
         <div class="service-name">LLM Optimization Consulting</div>
-        <div class="service-desc">Technical + content stack work for RAG architectures, llms.txt, Bing indexing, and entity establishment across major LLMs.</div>
+        <ul class="svc-glimpse">
+          <li>RAG-ready content architecture</li>
+          <li>llms.txt &amp; Bing indexing setup</li>
+          <li>Entity establishment across LLMs</li>
+        </ul>
         <div class="service-price">Technical Deep Dive</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">📋</div>
         <div class="service-name">Schema Markup &amp; Structured Data</div>
-        <div class="service-desc">Full JSON-LD implementation — Organization, Product, WebSite, BreadcrumbList, VideoObject, and LocalBusiness — validated with Rich Results Test.</div>
+        <ul class="svc-glimpse">
+          <li>Full JSON-LD implementation</li>
+          <li>Organization, Product, FAQ &amp; more</li>
+          <li>Validated with Rich Results Test</li>
+        </ul>
         <div class="service-price">From $147</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">📡</div>
         <div class="service-name">AI Citation Monitoring</div>
-        <div class="service-desc">Weekly tracking across ChatGPT, Perplexity, Gemini, and Google AI for 20–50 target queries, with priority actions.</div>
+        <ul class="svc-glimpse">
+          <li>Weekly tracking across ChatGPT, Perplexity, Gemini</li>
+          <li>Citation rate trends &amp; competitor view</li>
+          <li>Priority action list</li>
+        </ul>
         <div class="service-price">Ongoing</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">✍️</div>
         <div class="service-name">LLM Content Strategy</div>
-        <div class="service-desc">Content built to be extracted and quoted by AI systems — answer-first structure, original data, and citable evidence.</div>
+        <ul class="svc-glimpse">
+          <li>Answer-first content structure</li>
+          <li>Original data &amp; evidence</li>
+          <li>Built to be quoted by AI systems</li>
+        </ul>
         <div class="service-price">Ongoing</div>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">📍</div>
         <div class="service-name">Local Citation Cleanup &amp; NAP Correction</div>
-        <div class="service-desc">Fix inconsistent Name/Address/Phone data across directories so AI systems can confidently represent your business.</div>
+        <ul class="svc-glimpse">
+          <li>Fixes inconsistent Name/Address/Phone data</li>
+          <li>Directory-wide cleanup</li>
+          <li>Accurate local AI representation</li>
+        </ul>
         <div class="service-price">One-Time</div>
       </div>
     </div>
@@ -1951,26 +1992,38 @@ body { font-synthesis: none; }
       <div class="service-card advertising fade-up">
         <div class="service-icon">🚀</div>
         <div class="service-name"><a href="https://sheinnovatesai.com/chatgpt-ads-agency/" class="kw">Your ChatGPT Ads Partner</a></div>
-        <div class="service-desc">Full-service setup and management for ChatGPT Ads campaigns — targeting, creative, and optimization.</div>
+        <ul class="svc-glimpse">
+          <li>Full-service campaign setup</li>
+          <li>Targeting &amp; creative management</li>
+          <li>Ongoing optimization</li>
+        </ul>
         <div class="service-price">Managed</div>
       </div>
       <div class="service-card advertising fade-up">
         <div class="service-icon">💰</div>
         <div class="service-name"><a href="https://sheinnovatesai.com/what-does-chatgpt-ads-cost/" class="kw">ChatGPT Ads Cost Guide</a></div>
-        <div class="service-desc">Real pricing ranges, budget benchmarks, and what drives cost on ChatGPT Ads campaigns today.</div>
+        <ul class="svc-glimpse">
+          <li>Real pricing ranges</li>
+          <li>Budget benchmarks</li>
+          <li>What drives cost today</li>
+        </ul>
         <div class="service-price">Free Guide</div>
       </div>
       <div class="service-card advertising fade-up">
         <div class="service-icon">📖</div>
         <div class="service-name"><a href="https://sheinnovatesai.com/how-chatgpt-ads-work/" class="kw">How ChatGPT Ads Work</a></div>
-        <div class="service-desc">Targeting, context hints, placement, and how OpenAI decides when your ad is shown.</div>
+        <ul class="svc-glimpse">
+          <li>Targeting &amp; context hints</li>
+          <li>Ad placement logic</li>
+          <li>How OpenAI decides when to show ads</li>
+        </ul>
         <div class="service-price">Free Guide</div>
       </div>
     </div>
 
     <!-- ── Single CTA button: detailed overview lives on /services/ ── -->
     <div class="fade-up" style="text-align:center;margin-top:40px">
-      <a href="https://sheinnovatesai.com/services/" class="btn-primary">View Detailed Services Overview &amp; Pricing &rarr;</a>
+      <a href="https://sheinnovatesai.com/services/" class="btn-primary">View Detailed Services Overview &rarr;</a>
     </div>
 
   </div>
