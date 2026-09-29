@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sheinnovatesai.com/</loc>
-    <lastmod>2026-04-05</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -27,6 +27,12 @@
   <url>
     <loc>https://sheinnovatesai.com/ai-seo-audit/</loc>
     <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/chatgpt-ads-agency/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -56,13 +62,19 @@
   </url>
   <url>
     <loc>https://sheinnovatesai.com/services/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/ai-seo-pricing/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sheinnovatesai.com/tandeep-sangra/</loc>
-    <lastmod>2026-04-05</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -86,24 +98,6 @@
   </url>
   <url>
     <loc>https://sheinnovatesai.com/case-studies/</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/ai-seo-pricing/</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/ai-seo-checklist/</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/ai-seo-glossary/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -157,6 +151,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sheinnovatesai.com/how-chatgpt-ads-work/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/what-does-chatgpt-ads-cost/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/ai-seo-glossary/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/ai-seo-checklist/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sheinnovatesai.com/ai-seo-for-saas/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -187,6 +205,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sheinnovatesai.com/ai-seo-for-agencies/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sheinnovatesai.com/ai-seo-for-healthcare/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -205,45 +229,11 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sheinnovatesai.com/ai-seo-for-agencies/</loc>
-    <lastmod>2026-04-05</lastmod>
+    <loc>https://sheinnovatesai.com/ai-seo-for-web3/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://sheinnovatesai.com/privacy-policy/</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/terms-of-service/</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/sitemap-page/</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url><loc>https://sheinnovatesai.com/blog/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/how-to-rank-in-chatgpt/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/why-your-brand-is-invisible-to-ai/</loc><lastmod>2026-04-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/aeo-vs-seo-whats-different/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/schema-markup-for-ai-citations/</loc><lastmod>2026-04-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/ai-seo-audit-complete-guide/</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/how-perplexity-ranks-content/</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/geo-guide-generative-engine-optimization/</loc><lastmod>2026-04-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/llms-txt-complete-guide/</loc><lastmod>2026-04-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/entity-seo-for-ai-search/</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/ai-seo-for-saas-companies/</loc><lastmod>2026-04-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/google-ai-overviews-optimization/</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/ai-seo-content-strategy/</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/tandeep-sangra-ai-seo-expert/</loc><lastmod>2026-04-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://sheinnovatesai.com/blog/ai-citation-monitoring-guide/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url>
     <loc>https://sheinnovatesai.com/newsroom/</loc>
     <lastmod>2026-07-14</lastmod>
@@ -287,62 +277,44 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://sheinnovatesai.com/blog/3-mistakes-kill-ai-recommendation-chances/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://sheinnovatesai.com/blog/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/real-estate-ai-visibility-lost-commission/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/ai-local-citation-cleanup-nap-correction/</loc>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sheinnovatesai.com/blog/ai-overviews-stealing-transactional-traffic-how-to-get-it-back/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://sheinnovatesai.com/blog/chatgpt-ads-101/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sheinnovatesai.com/blog/ai-search-shifts-marketers-cant-ignore-2026/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://sheinnovatesai.com/blog/ai-search-visibility-metrics-kpis/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sheinnovatesai.com/blog/how-startups-outrank-competitors-in-chatgpt-perplexity/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://sheinnovatesai.com/blog/geo-problem-firewall-cloudflare-ai-crawlers/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sheinnovatesai.com/blog/is-seo-still-relevant-for-generative-ai-search/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/blog/llm-recommendations-bias-self-promotion/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/blog/organic-ctr-decline-ai-overviews-or-competitors/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/blog/seo-for-doctors-and-medical-clinics/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/blog/seo-for-law-firms-ai-search-guide/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sheinnovatesai.com/blog/top-ai-seo-consultants-and-agencies-in-india/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://sheinnovatesai.com/blog/what-is-query-fanout-ai-search/</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -365,9 +337,165 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sheinnovatesai.com/ai-seo-for-web3/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <loc>https://sheinnovatesai.com/blog/is-seo-still-relevant-for-generative-ai-search/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/ai-overviews-stealing-transactional-traffic-how-to-get-it-back/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/ai-search-shifts-marketers-cant-ignore-2026/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/organic-ctr-decline-ai-overviews-or-competitors/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/seo-for-law-firms-ai-search-guide/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/seo-for-doctors-and-medical-clinics/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/3-mistakes-kill-ai-recommendation-chances/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/top-ai-seo-consultants-and-agencies-in-india/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/how-startups-outrank-competitors-in-chatgpt-perplexity/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/ai-citation-monitoring-guide/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/llm-recommendations-bias-self-promotion/</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/tandeep-sangra-ai-seo-expert/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/ai-seo-content-strategy/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/google-ai-overviews-optimization/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/ai-seo-for-saas-companies/</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/entity-seo-for-ai-search/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/llms-txt-complete-guide/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/geo-guide-generative-engine-optimization/</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/how-perplexity-ranks-content/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/ai-seo-audit-complete-guide/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/schema-markup-for-ai-citations/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/aeo-vs-seo-whats-different/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/why-your-brand-is-invisible-to-ai/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/blog/how-to-rank-in-chatgpt/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/sitemap-page/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/privacy-policy/</loc>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://sheinnovatesai.com/terms-of-service/</loc>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
