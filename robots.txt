@@ -1,72 +1,61 @@
 # She Innovates AI — robots.txt
 # https://sheinnovatesai.com/robots.txt
-# Last updated: April 2026
+# Last updated: October 2026
+# Policy: We welcome AI search, AI assistant and AI training crawlers.
+# All public content on this site may be read, cited and learned from.
 
+# ── AI search & answer engines (fetch pages to cite in answers) ──
+# (Microsoft Copilot uses Bingbot, listed under Search engines below)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-CloudVertexBot
+User-agent: meta-webindexer
+User-agent: Meta-ExternalFetcher
+User-agent: Amzn-SearchBot
+User-agent: Amzn-User
+User-agent: MistralAI-Index
+User-agent: MistralAI-User
+User-agent: DuckAssistBot
+Allow: /
+
+# ── AI training crawlers ──
+# Intentionally allowed: we want AI models to learn about She Innovates AI,
+# our research and our frameworks. Blocking these would not affect
+# Google Search or AI Overviews, but it would reduce what AI models know about us.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Meta-ExternalAgent
+User-agent: FacebookBot
+User-agent: Amazonbot
+User-agent: MistralAI-Training
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: cohere-ai
+Allow: /
+
+# ── xAI (Grok) and DeepSeek — names vary ──
+User-agent: GrokBot
+User-agent: xAI-Bot
+User-agent: DeepSeekBot
+Allow: /
+
+# ── Search engines & link previews ──
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: facebookexternalhit
+Allow: /
+
+# ── Everyone else, including AI crawlers without a published name ──
 User-agent: *
 Allow: /
 
 Sitemap: https://sheinnovatesai.com/sitemap.xml
-
-# OpenAI / ChatGPT
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-# Anthropic / Claude
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-# Perplexity AI
-User-agent: PerplexityBot
-Allow: /
-
-# Google AI / Gemini / AI Overviews
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-# Microsoft / Bing
-User-agent: Bingbot
-Allow: /
-
-User-agent: msnbot
-Allow: /
-
-# Cohere
-User-agent: cohere-ai
-Allow: /
-
-# Common Crawl
-User-agent: CCBot
-Allow: /
-
-# Meta AI
-User-agent: FacebookBot
-Allow: /
-
-# Apple
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-# Block private paths only
-User-agent: *
-Disallow: /wp-admin/
-Disallow: /wp-login.php
 
 # AI context file: https://sheinnovatesai.com/llms.txt
